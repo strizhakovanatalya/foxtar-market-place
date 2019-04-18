@@ -1,2 +1,2 @@
 # FOXTAR-market-place
-The second trainee project!
+The second trainee project
