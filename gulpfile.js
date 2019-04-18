@@ -24,16 +24,31 @@ gulp.task('sass', function () {
    
   
 
-gulp.task('default', function () {
+gulp.task('allCss', function () { 
   return gulp.src('./app/css/*.css')
-    .pipe(concat('all.css'))
-    .pipe(postcss([ autoprefixer() ]))
-    .pipe(csso())
-    .pipe(rename({
-      basename: "style",
-      suffix: '.min'
-    }))
-    .pipe(gulp.dest('./app/css'));
+      .pipe(concat('allstyle.css'))
+      .pipe(postcss([ autoprefixer() ]))
+      .pipe(csso())
+      .pipe(rename({
+          suffix: '.min'
+        }))
+      .pipe(gulp.dest('./app/css'));
 });
+
+
+gulp.task('minCss', gulp.series('sass', 'allCss'))
+
+
+
+gulp.task('watch', function(){
+  gulp.watch('./app/scss/custom/*.scss', gulp.series('minCss'));
+  gulp.watch("app/*.html").on('change', browserSync.reload);
+  gulp.watch("app/css/*.css").on('change', browserSync.reload);
+
+})
+
+gulp.task('default', gulp.series('minCss', gulp.parallel('browser', 'watch')))
+
+
 
 
