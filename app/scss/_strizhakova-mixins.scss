@@ -1,0 +1,20 @@
+@mixin flexible () {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+} 
+
+@mixin default-title () {
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    color: $def-color;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+}
+
+@mixin flex-a-i-center(){
+    display:flex;
+    align-items: center;
+}
+    
