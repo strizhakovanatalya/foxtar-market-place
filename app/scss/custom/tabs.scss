@@ -63,7 +63,7 @@
     @include flexible ();
     max-width: 1920px;
     margin:auto;
-    padding: 0 18px;
+    padding: 0 18px; 
 }
 
 .item-title{
@@ -75,7 +75,7 @@
 
 .item-subtitle{
     @include default-title ();
-    color:#8bc34a;
+    color:$green;
     text-align: left;
 }
 
@@ -97,7 +97,7 @@
     margin: 15px 12px;
     max-width:442px;
     position:relative;
-    flex: 1 0 21%;
+    flex: 1 0 20%;
     &:hover{
         box-shadow: 0px 14px 16px rgba(205,214,222,.75);
     }
@@ -119,7 +119,7 @@
     @include flex-a-i-center ();
 }
 
-.img-text{
+.item-author{
     @include default-title ();
     margin-left:15px;
     color:#546e7a;
@@ -177,7 +177,7 @@
     top: 0px; 
     width: 0;
 	height: 0;
-	border-top: 60px solid #8bc34a; 
+	border-top: 60px solid $green; 
 	border-right: 60px solid transparent;	
 }
 
@@ -191,62 +191,54 @@
 
 @media(max-width:1400px){
 .item{
-    flex: 1 0 29%;
-    max-width:390px;
+    flex: 0 1 29%;
+}
+
+.item-rating, .item-text{
+    padding:18px 20px 22px;
+}
+
+#Joomla div.item, #PSD div.item{
+    flex: 0 1 50%;
+}
+
+#Component div.item{
+    flex: 0 1 90%;
 }
 }
 
-@media(max-width:1070px){
+@media(max-width:1150px){
 .item{
-    flex: 1 0 45%;
-    max-width:320px;
+    flex: 0 1 46%;
 }
 }
 
-@media(max-width:720px){
-.item-rating{
-    flex-direction: column;
+@media(max-width:744px){
+.item{
+    flex: 0 1 75%;
 }
 
-.item-rating-img{
-    margin-bottom:15px;
-}
-
-.rating-stars{
-    align-self: flex-end;
+#Joomla div.item, #PSD div.item{
+    flex: 0 1 90%;
 }
 }
 
 @media(max-width:600px){
-.item{
-    max-width:268px;
-}
-
 .tabs ul{
     text-align: center;
 }
 
 .tabs ul li{
-    width: 29%;
     margin-bottom:25px;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.item-text{
-    flex-direction: column;
+.item{
+    flex: 0 1 95%;
+}
 }
 
-.item-name{
-    margin-bottom:15px;
-}
-
-.item-price{
-    align-self: flex-end;
-}
-
-}
-
-@media(max-width:360px){
+@media(max-width:376px){
 .btn-lg{
     margin-bottom:25px;
 }
@@ -254,4 +246,16 @@
 .tabs .btn{
     padding:0 5px;
 }
+
+.item-rating, .item-text{
+    padding:18px 10px 22px;
 }
+
+.item-author{
+    margin-left:5px;
+}
+
+.rating-stars .rating-number-bracket:first-of-type{
+    margin-left: 5px;
+}
+} 
