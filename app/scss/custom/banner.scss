@@ -3,9 +3,11 @@
 @import"../_reset";
 
 .banner {
-    background: url('../../img/photo_2019-04-24_21-00-27.jpg') no-repeat center / cover;
-    height: 532px;
-    position: relative;
+    @include flex-col ();
+    justify-content: center;
+    background: url('../../img/banner.png') no-repeat center / cover;
+    height: 100%;
+    min-height: 532px;
     text-align: center;
     text-transform: capitalize;
     font-family: 'Roboto', sans-serif;
@@ -13,10 +15,7 @@
 
     .banner_text {
         @include flex-col ();
-        position: absolute;
-        left: 27%;
-        top: 40%;
-        #title {
+        h1 {
             font-size: 48px;
             font-weight: bold;
             letter-spacing: 1px;
@@ -30,6 +29,38 @@
             margin-bottom: 58px;
 
         }
-    }
-    
+        .input_inner {
+            position: relative;
+            max-width: 672px;
+            width: 100%;
+            margin: 0 auto;
+        input {
+            max-width: 672px;
+            min-height: 52px;
+            width: 100%;
+            height: 100%;
+            font-size: 14px;
+            color: #90a4ae;
+            letter-spacing: 0.7px;
+            text-transform: capitalize;
+            padding: 24px;
+            border-radius: 5px;
+            border-style: unset;
+            box-shadow: 0 0 27px rgba(124, 178, 64, 0.5);
+            position: relative;
+            text-transform: capitalize;
+            font-family: 'Roboto', sans-serif;
+            
+        }
+        .fa-search {
+            position: absolute;
+            color: rgba(124, 147, 159, 0.5);
+            width: 20px;
+            height: 20px;
+            z-index: 1;
+            padding: 24px;
+            right: 10px;
+        }
+        }
+        }
 }
