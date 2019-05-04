@@ -5,7 +5,7 @@
 .banner {
     @include flex-col ();
     justify-content: center;
-    background: url('../../img/banner.png') no-repeat center / cover;
+    background: url('../img/bann.png') no-repeat center / cover;
     height: 100%;
     min-height: 532px;
     text-align: center;
@@ -64,3 +64,76 @@
         }
         }
 }
+
+@media(max-width: 775px){
+    .banner {
+    .banner_text {
+    h1 {
+        line-height: 55px;
+        max-width: 700px;
+        margin: 0 auto 25px;
+    }
+    span {
+        margin: 0 auto 40px;
+        max-width: 500px;
+    }
+    .input_inner {
+        max-width: 500px;
+    }
+    }
+}
+
+    
+ }
+
+ @media(max-width: 775px) {
+    .banner {
+        .banner_text {
+        h1 {
+            line-height: 55px;
+            max-width: 500px;
+            margin: 0 auto 25px;
+        }
+        span {
+            margin: 0 auto 40px;
+            max-width: 400px;
+        }
+        .input_inner {
+            max-width: 400px;
+            max-height: 45px;
+        }
+    }
+}
+ }
+
+
+ @media(max-width: 450px) {
+    .banner {
+        .banner_text {
+        h1 {
+            line-height: 55px;
+            max-width: 300px;
+            margin: 0 auto 25px;
+            font-size: 40px;
+            line-height: 45px;
+        }
+        span {
+            margin: 0 auto 40px;
+            max-width: 300px;
+            line-height: 25px;
+            font-size: 15px;
+        }
+        .input_inner {
+            max-width: 300px;
+            max-height: 45px;
+        }
+    }
+}
+ }
+
+ @media(max-width: 360px) {
+     .banner .banner_text .input_inner {
+         max-width: 250px ;
+     }
+
+ }

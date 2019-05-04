@@ -12,10 +12,33 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./js/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    
+    
+    <!---->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./js/jquery.slicknav.min.js"></script>
     <script src="./js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="./js/slick/slicknav.min.css">
     <link rel="stylesheet" href="css/allstyle.min.css">
+    
+    <script>
+            $(function(){
+                $('#menu').slicknav({
+                appendTo: '#header .header_menu',
+                label: ''
+            });
+            });
+        </script>
 
 </head>
 
@@ -27,7 +50,7 @@
                 <img src="./img/photo_2019-04-24_21-00-26.png" alt="Logo">
             </div>
             <div class="section_registr">
-                <div>
+                <div class="header_text">
                     <span>Need help?<span> Talk to an expert: +61 3 8376 6284</span></span>
                 </div>
                 <div class="header_basket">
@@ -42,18 +65,18 @@
 
         </div>
         <div class="header_menu">
-            <div>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">WordPress</a>
-                <a href="#">Joomla</a>
-                <a href="#">PSD</a>
-                <a href="#">Plugins</a>
-                <a href="#">Components</a>
-                <a href="#">Pages</a>
-                <a href="#">Contact</a>
-                <a href="#">Help</a>
-            </div>
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">WordPress</a></li>
+                <li><a href="#">Joomla</a></li>
+                <li><a href="#">PSD</a></li>
+                <li><a href="#">Plugins</a></li>
+                <li><a href="#">Components</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
         </div>
         <div class="banner">
             <div class="banner_text">
@@ -1695,15 +1718,7 @@
     <!-- /#main -->
     <div id="footer"></div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    
     <script src="js/scripts.js"></script>
 </body>
 
