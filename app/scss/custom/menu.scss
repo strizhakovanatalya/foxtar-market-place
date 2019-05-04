@@ -1,0 +1,21 @@
+@import "../_variables";
+@import "../_mixins";
+@import "../reset";
+
+.header_menu {
+    background-color: $def-color;
+    height: 61px;
+    div {
+        @include flexible ();
+        justify-content: start;
+        @include container;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        letter-spacing: 1px;
+        color: $white; 
+        padding: 23px 0px;
+        a {
+            padding-right: 40px;
+        }
+    }
+}

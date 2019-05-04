@@ -1,0 +1,43 @@
+@import"../_variables";
+@import"../_mixins";
+@import"../_reset";
+
+.freeTutorials .title{
+    font-weight: 600;
+    margin-bottom: 65px;
+}
+.tutorials {
+    @include flexible ();
+    margin-bottom: 105px;
+}
+.title {
+    @include default-title ();
+    font-size: 36px;
+}
+.t-block{
+    height: 370px;
+    width: 370px;
+    background-color: $light-grey;
+    margin: 15px;
+}
+.t-block-img{
+    height: 270px;
+    margin-bottom: 30px;
+}
+.t-title{
+    font-family: 'Roboto', sans-serif;
+    padding-left: 71px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+}
+@media(max-width:400px) {
+    .t-title{        
+        padding-left: 60px;
+    }
+}
+@media(max-width:350px) {
+    .t-title{        
+        padding-left: 25px;
+    }
+}

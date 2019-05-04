@@ -1,0 +1,35 @@
+@import"../_variables";
+@import"../_mixins";
+@import"../_reset";
+
+.banner {
+    background: url('../../img/photo_2019-04-24_21-00-27.jpg') no-repeat center / cover;
+    height: 532px;
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    color: $white;
+
+    .banner_text {
+        @include flex-col ();
+        position: absolute;
+        left: 27%;
+        top: 40%;
+        #title {
+            font-size: 48px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            line-height: 30px;
+            margin-bottom: 35px;
+        }
+        span {
+            font-size: 20px;
+            letter-spacing: 1px;
+            line-height: 30px;
+            margin-bottom: 58px;
+
+        }
+    }
+    
+}
