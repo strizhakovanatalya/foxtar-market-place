@@ -6,67 +6,67 @@
     background-color: $def-color;
 }
 
-.container-md{
-    max-width: 1170px;
-    margin:auto;
-    display:flex;
-    justify-content: center;
-}
-
 .why-choose.container-full{
     padding:125px 0 120px;
-}
 
-.why-choose .title{
-    color:$white;
-    margin-bottom:90px;
-}
+    .title{
+        color:$white;
+        margin:0 15px 90px;
+    }
 
-.why-choose-items{
-    display:inline-flex;
-    justify-content:space-around;
-    flex-wrap: wrap;
-    max-width:1124px;
-}
+    .container-md{
+        max-width: 1200px;
+        margin:auto;
+        display:flex;
+        justify-content: center;
+        padding:0 15px;
 
-.why-choose-item{
-    display:flex;
-    flex-direction: column;
-    flex: 1 0 20%;
-    max-width: 320px;
-    margin:0 28px;
-}
+        .why-choose-items{
+            display:inline-flex;
+            justify-content:space-around;
+            flex-wrap: wrap;
+            max-width:1124px;
 
+            .why-choose-item{
+                display:flex;
+                flex-direction: column;
+                flex: 1 0 20%;
+                max-width: 320px;
+                margin:0 28px;
 
-.why-choose .circle{
-    width:115px;
-    height:115px;
-    border-radius: 50%;
-    background-color: #b5b5b5;
-    margin:0 auto 35px;
-}
+                .circle{
+                    width:115px;
+                    height:115px;
+                    border-radius: 50%;
+                    background-color: #b5b5b5;
+                    margin:0 auto 35px;
+                }
 
-.why-choose-subtitle{
-    @include default-title ();
-    font-size: 24px;
-    color:$white;
-    margin-bottom:30px;
-}
-.why-choose-subtitle a:hover{
-    color:$green;
-}
+                .why-choose-subtitle{
+                    @include default-title ();
+                    font-size: 24px;
+                    color:$white;
+                    margin-bottom:30px;
 
+                    a:hover{
+                        color:$green;
+                    }
+                }
 
-.why-choose-text{
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    line-height: 24px;
-    color:#b0bec5;
+                .why-choose-text{
+                    text-align: center;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 15px;
+                    line-height: 24px;
+                    color:#b0bec5;
+                }
+            }
+        }
+    }
 }
 
 @media(max-width:890px){
-    .why-choose-item{
+    .why-choose.container-full .container-md .why-choose-items .why-choose-item{
         flex: 0 1 46%;
         margin-bottom:50px;
     }

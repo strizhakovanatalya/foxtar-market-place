@@ -1,6 +1,8 @@
 @import "../_variables";
 @import "../_mixins";
-@import "../reset";
+@import"../_reset";
+
+
 
 .header_menu {
     background-color: $def-color;
