@@ -12,11 +12,12 @@
 @mixin button {
     border-radius: 5px;
     cursor: pointer;
-    height: 30px;
-    width: 70px;
+    min-height: 30px;
+    min-width: 70px;
     text-align: center;
     padding: 10px;
 }
+
 
 @mixin flex-col {
     display: flex;

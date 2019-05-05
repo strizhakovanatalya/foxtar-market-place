@@ -29,14 +29,18 @@
     color: $white;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;    
+    display: inline;    
 }
 
 .btn_login {
     background-color: $green;
     margin-right: 7px;
+    border: 1px solid $green;
+    padding: 10px 17px;
 }
 .btn_reg {
     background-color: $red;
+    border: 1px solid $red;
 }
 
 .header_basket {
@@ -73,6 +77,41 @@
     text-align: center;
     line-height: 16px;
 }
+
+.btn {
+    font-weight: normal;
+    line-height: normal;
+    vertical-align: inherit;
+}
+
+.btn-primary:focus {
+    box-shadow: none;
+}
+
+.btn_login:hover {
+    background-color: $white;
+    color: $green;
+    border-color: $green;
+
+}
+
+.btn_reg:hover {
+    background-color: $white;
+    color: $red;
+    border-color: $red;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: $green;
+    border-color: $green;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+
 
 
 @media(max-width:1180px){

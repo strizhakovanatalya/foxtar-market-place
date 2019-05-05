@@ -7,7 +7,7 @@
     height: 61px;
     #menu {
         @include flexible ();
-        justify-content: start;
+        justify-content: flex-start;
         @include container;
         font-family: 'Roboto', sans-serif;
         font-size: 14px;

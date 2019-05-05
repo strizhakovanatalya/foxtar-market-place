@@ -10,10 +10,13 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./js/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css">
-    
-    
+
+
+
     <!---->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -24,25 +27,56 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./js/jquery.slicknav.min.js"></script>
     <script src="./js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
     <link rel="stylesheet" href="./js/slick/slicknav.min.css">
     <link rel="stylesheet" href="css/allstyle.min.css">
-    
+
     <script>
-            $(function(){
-                $('#menu').slicknav({
+        $(function () {
+            $('#menu').slicknav({
                 appendTo: '#header .header_menu',
                 label: ''
             });
-            });
-        </script>
-
+        });
+    </script>
 </head>
 
 <body>
+    <!--Modal Login-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <i class="fas fa-times close" data-dismiss="modal" aria-label="Close"></i>
+                    <h1>login</h1>
+                    <div class="modal-name">
+                        <i class="fas fa-user-alt"></i>
+                        <input type="text" class="input_name" placeholder="Name">
+                    </div>
+                    <div class="modal-pass">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" class="input_password" placeholder="Password">
+                    </div>
+                    <div class="modal-buttons">
+                        <div class="btn-submit">
+                            <a href="#">submit</a>
+                        </div>
+                        <div class="btn-acc">
+                            <i class="fas fa-edit"></i>
+                            <a href="#">creat an account?</a>
+                        </div>
+
+                    </div>
+                    <span>lost password?</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Modal Login-->
     <!--Header-->
     <div id="header">
         <div class="container">
@@ -58,7 +92,8 @@
                     <div class="number_cart">8</div>
                 </div>
                 <div class="header_buttons">
-                    <a href="#" class="button btn_login">Login</a>
+                    <a href="#" class="button btn_login btn btn-primary" data-toggle="modal"
+                        data-target="#exampleModal">Login</a>
                     <a href="#" class="button btn_reg">Register</a>
                 </div>
             </div>
@@ -1718,7 +1753,7 @@
     <!-- /#main -->
     <div id="footer"></div>
 
-    
+
     <script src="js/scripts.js"></script>
 </body>
 
