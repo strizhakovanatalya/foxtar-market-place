@@ -1,0 +1,20 @@
+.modal{
+    
+    .modal-content{
+        width:729px;
+        height:484px;
+        background-color: #8bc34a;
+
+        .modal-header{
+            border:none;
+        }
+
+        .modal-body{
+            display:flex;
+            flex-direction: column;
+            /* .modal-title{
+
+            } */
+        }
+    }
+}
