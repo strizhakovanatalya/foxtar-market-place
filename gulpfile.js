@@ -97,7 +97,7 @@ gulp.task('watch', function(){
 
 })
 
-gulp.task('default', gulp.series('minCss','tinypng', gulp.parallel('browser', 'sprite','watch')))
+gulp.task('default', gulp.series('minCss', gulp.parallel('browser', 'sprite','watch')))
 
 
 

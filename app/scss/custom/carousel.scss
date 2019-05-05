@@ -6,65 +6,54 @@
     background-color: $white;
 }
 
-.carousel-items{
-    @include flexible ();
-    margin-bottom:70px;
-    flex-wrap: nowrap;
-}
-
-.carousel-wrapper{
-    padding: 0 18px;
-}
-
 .carousel{
     overflow: hidden;
     position:relative;
+    padding: 0 18px;
+
+    .carousel-items{
+        @include flexible ();
+        margin-bottom:70px;
+    }
+
+    .slick-dots{
+        position:absolute;
+        bottom: 10px;
+        left: auto;
+    }
+
+    .slick-dots li button{
+        background:#e8e8e8;
+        background-image: url(../img/ellipse.png);
+        border: 1px solid #ccc;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        color: transparent;
+        &:before{
+            font-family: 'slick';
+            font-size: 0px;
+            line-height: 0px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0px;
+            height: 0px;
+            content: '•';
+            text-align: center;
+            opacity: .25;
+            color: transparent;
+            -webkit-font-smoothing: antialiased;
+        }
+    }
+
+    .slick-dots li.slick-active button{
+        background-color: $green;
+        border-color: $green;
+        background-image: none;
+    }
 }
 
 .slick-dotted.slick-slider {
     margin-bottom: 0;
-}
-
-.slick-dots{
-    position:absolute;
-    bottom: 10px;
-    left: auto;
-}
-
-.slick-dots li button{
-    background:#e8e8e8;
-    background-image: url(../img/ellipse.png);
-    border: 1px solid #ccc;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    color: transparent;
-}
-
-.slick-dots li button:before{
-    font-family: 'slick';
-    font-size: 0px;
-    line-height: 0px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0px;
-    height: 0px;
-    content: '•';
-    text-align: center;
-    opacity: .25;
-    color: transparent;
-    -webkit-font-smoothing: antialiased;
-}
-
-.slick-dots li.slick-active button{
-    background-color: $green;
-    border-color: $green;
-    background-image: none;
-}
-
-@media(max-width:1400px){
-    .carousel-items{
-        flex-wrap: wrap;
-    }
 }
