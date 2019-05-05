@@ -1,0 +1,25 @@
+@mixin container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+@mixin flexible-sp-btw {
+    display: flex; 
+    justify-content: space-between;     
+}
+
+@mixin button {
+    border-radius: 5px;
+    cursor: pointer;
+    min-height: 30px;
+    min-width: 70px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+@mixin flex-col {
+    display: flex;
+    flex-direction: column; 
+}

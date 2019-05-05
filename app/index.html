@@ -1,39 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>FOXTAR - market place</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="./js/slick/slick.css">
-        <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <script src="./js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
-        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FOXTAR - market place</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./js/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css">
 
-        <link rel="stylesheet" href="css/allstyle.min.css">
 
-    </head>
-    <body>
-        <div id="header">
-            <!-- <div class="menu container-full bg-white">
-                <div class="buttons">
-                    <a href="" class="butn butn-lg login" data-toggle="modal" data-target="#exampleModalCenter">Login</a>
-                    <a href="" class="butn butn-lg reg">Register</a>
+
+    <!---->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./js/jquery.slicknav.min.js"></script>
+    <script src="./js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="./js/slick/slicknav.min.css">
+    <link rel="stylesheet" href="css/allstyle.min.css">
+
+    <script>
+        $(function () {
+            $('#menu').slicknav({
+                appendTo: '#header .header_menu',
+                label: ''
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!--Modal Login-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <i class="fas fa-times close" data-dismiss="modal" aria-label="Close"></i>
+                    <h1>login</h1>
+                    <div class="modal-name">
+                        <i class="fas fa-user-alt"></i>
+                        <input type="text" class="input_name" placeholder="Name">
+                    </div>
+                    <div class="modal-pass">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" class="input_password" placeholder="Password">
+                    </div>
+                    <div class="modal-buttons">
+                        <div class="btn-submit">
+                            <a href="#">submit</a>
+                        </div>
+                        <div class="btn-acc">
+                            <i class="fas fa-edit"></i>
+                            <a href="#">creat an account?</a>
+                        </div>
+
+                    </div>
+                    <span>lost password?</span>
                 </div>
-            </div> -->
+            </div>
         </div>
-        <div id="main">
+    </div>
+    <!--/Modal Login-->
+    <!--Header-->
+    <div id="header">
+        <div class="container">
+            <div>
+                <img src="./img/photo_2019-04-24_21-00-26.png" alt="Logo">
+            </div>
+            <div class="section_registr">
+                <div class="header_text">
+                    <span>Need help?<span> Talk to an expert: +61 3 8376 6284</span></span>
+                </div>
+                <div class="header_basket">
+                    <div class="sh_cart"><i class="fas fa-shopping-cart"></i></div>
+                    <div class="number_cart">8</div>
+                </div>
+                <div class="header_buttons">
+                    <a href="#" class="button btn_login btn btn-primary" data-toggle="modal"
+                        data-target="#exampleModal">Login</a>
+                    <a href="#" class="button btn_reg">Register</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="header_menu">
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">WordPress</a></li>
+                <li><a href="#">Joomla</a></li>
+                <li><a href="#">PSD</a></li>
+                <li><a href="#">Plugins</a></li>
+                <li><a href="#">Components</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <div class="banner_text">
+                <h1>Welcome to foxtar market place!</h1>
+                <span>Premium WordPress Themes, Web Templates and Many More...</span>
+                <div class="input_inner">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="search your keywords...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Header-->
+   <div id="main">
             <!-- TABS START -->
             <div class="container-full">
                 <h3 class="title">Let’s Check Out Our Newest Release Products</h3>
@@ -1242,37 +1336,14 @@
             <!-- WHY-CHOOSE END -->
         </div>
         <!-- /#main -->
-        <div id="footer"></div>
-
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <div class="modal-title">
-                      Login
-                  </div>
-                  <form action="">
-                      <input type="text">
-                      <input type="password">
-                  </form>
-                  <div class="modal-btns">
-                      <button>Submit</button>
-                      <button>Create an account</button>
-                  </div>
-                  <div><a href="">Lost password?</a></div>
-                </div>
-                
-              </div>
-            </div>
-          </div>
+  
+  
+  
+    
+       
+    <div id="footer"></div>
 
 
-        <script src="js/scripts.js"></script>
-    </body>
+    <script src="js/scripts.js"></script>
+</body>
 </html>
