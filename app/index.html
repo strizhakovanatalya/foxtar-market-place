@@ -16,9 +16,6 @@
     <link rel="stylesheet" type="text/css" href="./js/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css">
 
-
-
-    <!---->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -34,15 +31,6 @@
     <script src="./js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
     <link rel="stylesheet" href="./js/slick/slicknav.min.css">
     <link rel="stylesheet" href="css/allstyle.min.css">
-
-    <script>
-        $(function () {
-            $('#menu').slicknav({
-                appendTo: '#header .header_menu',
-                label: ''
-            });
-        });
-    </script>
 </head>
 
 <body>
@@ -82,20 +70,23 @@
     <div id="header">
         <div class="container">
             <div>
-                <img src="./img/photo_2019-04-24_21-00-26.png" alt="Logo">
+                <img src="./img/logo.png" alt="Logo">
             </div>
             <div class="section_registr">
                 <div class="header_text">
-                    <span>Need help?<span> Talk to an expert: +61 3 8376 6284</span></span>
+                    <span>Need help?</span>
+                    <span> Talk to an expert: +61 3 8376 6284</span>
                 </div>
                 <div class="header_basket">
                     <div class="sh_cart"><i class="fas fa-shopping-cart"></i></div>
-                    <div class="number_cart">8</div>
                 </div>
-                <div class="header_buttons">
-                    <a href="#" class="button btn_login btn btn-primary" data-toggle="modal"
-                        data-target="#exampleModal">Login</a>
-                    <a href="#" class="button btn_reg">Register</a>
+                <div class="header_simbols">
+                    <div class="button btn_login btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        <a href="#">Login</a>
+                    </div>
+                    <div class="button btn_reg">
+                        <a href="#">Register</a>
+                    </div>
                 </div>
             </div>
 
@@ -127,277 +118,840 @@
     </div>
 
     <!--Header-->
-   <div id="main">
-            <!-- TABS START -->
-            <div class="container-full">
-                <h3 class="title">Let’s Check Out Our Newest Release Products</h3>
-                <div class="tabs container-big" id="tabs">
-                    <div class="tabs-buttons">
-                        <ul>
-                            <li>
-                                <a href="#All" class="butn">All</a>
-                            </li>
-                            <li>
-                                <a href="#WordPress" class="butn">WordPress</a>
-                            </li>
-                            <li>
-                                <a href="#Joomla" class="butn">Joomla</a>
-                            </li>
-                            <li>
-                                <a href="#Plugins" class="butn">Plugins</a>
-                            </li>
-                            <li>
-                                <a href="#Component" class="butn">Component</a>
-                            </li>
-                            <li>
-                                <a href="#PSD" class="butn">PSD</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- / tabs-buttons -->
-                    <div class="tabs-items">
-                        <div id="All">
-                            <div class="item">
-                                <div class="item-img">
-                                    <a href="">
-                                        <img src="img/tabs-img.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item-text">
-                                    <div class="item-name">
-                                        <div class="item-title">
-                                            <a href="product-details.html" target="_blank">
-                                                Mobile APP
-                                            </a>
-                                        </div>
-                                        <div class="item-subtitle">
-                                            Site Template
-                                        </div>
-                                    </div>
-                                    <div class="item-price">
-                                        $19
-                                    </div>
-                                </div>
-                                <!-- /item-text -->
-                                <div class="item-rating">
-                                    <div class="item-rating-img">
-                                        <img src="img/item-rating-img.png" alt="">
-                                        <span class="item-author">Radiustheme</span>
-                                    </div>
-                                    <div class="rating-stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span class="rating-number-bracket">(</span>
-                                        <span class="rating-number">&nbsp;05</span>
-                                        <span class="rating-number-bracket">)</span>
-                                    </div>
-                                </div>
-                                <!-- /item-rating -->
-                            </div>
-                            <!-- /item -->
-
-                            <div class="item label">
-                                <div class="label-sign">
-                                    <i class="fas fa-bolt"></i>
-                                </div>
-                                <div class="item-img">
-                                    <a href="">
+    <div id="main">
+        <!-- TABS START -->
+        <div class="container-full">
+            <h3 class="title">Let’s Check Out Our Newest Release Products</h3>
+            <div class="tabs container-big" id="tabs">
+                <div class="tabs-buttons">
+                    <ul>
+                        <li>
+                            <a href="#All" class="butn">All</a>
+                        </li>
+                        <li>
+                            <a href="#WordPress" class="butn">WordPress</a>
+                        </li>
+                        <li>
+                            <a href="#Joomla" class="butn">Joomla</a>
+                        </li>
+                        <li>
+                            <a href="#Plugins" class="butn">Plugins</a>
+                        </li>
+                        <li>
+                            <a href="#Component" class="butn">Component</a>
+                        </li>
+                        <li>
+                            <a href="#PSD" class="butn">PSD</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- / tabs-buttons -->
+                <div class="tabs-items">
+                    <div id="All">
+                        <div class="item">
+                            <div class="item-img">
+                                <a href="">
                                     <img src="img/tabs-img.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item-text">
-                                    <div class="item-name">
-                                        <div class="item-title">
-                                            <a href="product-details.html" target="_blank">
-                                                The Post Grid Pro
-                                            </a>
-                                        </div>
-                                        <div class="item-subtitle">
-                                            WordPress Plugin
-                                        </div>
-                                    </div>
-                                    <div class="item-price">
-                                        $15
-                                    </div>
-                                </div>
-                                <!-- /item-text -->
-                                <div class="item-rating">
-                                    <div class="item-rating-img">
-                                        <img src="img/item-rating-img.png" alt="">
-                                        <span class="item-author">PsdBosS</span>
-                                    </div>
-                                    <div class="rating-stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span class="rating-number-bracket">(</span>
-                                        <span class="rating-number">&nbsp;05</span>
-                                        <span class="rating-number-bracket">)</span>
-                                    </div>
-                                </div>
-                                <!-- /item-rating -->
+                                </a>
                             </div>
-                            <!-- /item label -->
-
-                            <div class="item">
-                                <div class="item-img">
-                                    <a href="">
-                                        <img src="img/tabs-img.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item-text">
-                                    <div class="item-name">
-                                        <div class="item-title">
-                                            <a href="">
-                                                Food Menu
-                                            </a>
-                                        </div>
-                                        <div class="item-subtitle">
-                                            WordPress Plugin
-                                        </div>
+                            <div class="item-text">
+                                <div class="item-name">
+                                    <div class="item-title">
+                                        <a href="product-details.html" target="_blank">
+                                            Mobile APP
+                                        </a>
                                     </div>
-                                    <div class="item-price">$20</div>
-                                </div>
-                                <!-- /item-text -->
-                                <div class="item-rating">
-                                    <div class="item-rating-img">
-                                        <img src="img/item-rating-img.png" alt="">
-                                        <span class="item-author">Manilip</span>
-                                    </div>
-                                    <div class="rating-stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span class="rating-number-bracket">(</span>
-                                        <span class="rating-number">&nbsp;05</span>
-                                        <span class="rating-number-bracket">)</span>
+                                    <div class="item-subtitle">
+                                        Site Template
                                     </div>
                                 </div>
-                                <!-- /item-rating -->
+                                <div class="item-price">
+                                    $19
+                                </div>
                             </div>
-                            <!-- /item -->
-
-                            <div class="item">
-                                <div class="item-img">
-                                    <a href="">
-                                        <img src="img/tabs-img.png" alt="">
-                                    </a>
+                            <!-- /item-text -->
+                            <div class="item-rating">
+                                <div class="item-rating-img">
+                                    <img src="img/item-rating-img.png" alt="">
+                                    <span class="item-author">Radiustheme</span>
                                 </div>
-                                <div class="item-text">
-                                    <div class="item-name">
-                                        <div class="item-title">
-                                            <a href="">
-                                                Imac Mockup
-                                            </a>
-                                        </div>
-                                        <div class="item-subtitle">
-                                            Psd Template
-                                        </div>
-                                    </div>
-                                    <div class="item-price">$12</div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-number-bracket">(</span>
+                                    <span class="rating-number">&nbsp;05</span>
+                                    <span class="rating-number-bracket">)</span>
                                 </div>
-                                <!-- /item-text -->
-                                <div class="item-rating">
-                                    <div class="item-rating-img">
-                                        <img src="img/item-rating-img.png" alt="">
-                                        <span class="item-author">Lolypop</span>
-                                    </div>
-                                    <div class="rating-stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span class="rating-number-bracket">(</span>
-                                        <span class="rating-number">&nbsp;05</span>
-                                        <span class="rating-number-bracket">)</span>
-                                    </div>
-                                </div>
-                                <!-- /item-rating -->
                             </div>
-                            <!-- /item -->
+                            <!-- /item-rating -->
+                        </div>
+                        <!-- /item -->
 
-                            <div class="item">
-                                <div class="item-img">
-                                    <a href="">
-                                        <img src="img/tabs-img.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item-text">
-                                    <div class="item-name">
-                                        <div class="item-title"><a href="">Gymedge</a></div>
-                                        <div class="item-subtitle">Joomla Template</div>
-                                    </div>
-                                    <div class="item-price">$45</div>
-                                </div>
-                                <!-- /item-text -->
-                                <div class="item-rating">
-                                    <div class="item-rating-img">
-                                        <img src="img/item-rating-img.png" alt="">
-                                        <span class="item-author">Micrsof</span>
-                                    </div>
-                                    <div class="rating-stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span class="rating-number-bracket">(</span>
-                                        <span class="rating-number">&nbsp;05</span>
-                                        <span class="rating-number-bracket">)</span>
-                                    </div>
-                                </div>
-                                <!-- /item-rating -->
+                        <div class="item label">
+                            <div class="label-sign">
+                                <i class="fas fa-bolt"></i>
                             </div>
-                            <!-- /item -->
-
-                            <div class="item">
-                                <div class="item-img">
-                                    <a href="">
-                                        <img src="img/tabs-img.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item-text">
-                                    <div class="item-name">
-                                        <div class="item-title">
-                                            <a href="">
-                                                The Post Grid Pro
-                                            </a>
-                                        </div>
-                                        <div class="item-subtitle">
-                                            WordPress Plugin
-                                        </div>
-                                    </div>
-                                    <div class="item-price">$19</div>
-                                </div>
-                                <!-- /item-text -->
-                                <div class="item-rating">
-                                    <div class="item-rating-img">
-                                        <img src="img/item-rating-img.png" alt="">
-                                        <span class="item-author">Raklouse</span>
-                                    </div>
-                                    <div class="rating-stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span class="rating-number-bracket">(</span>
-                                        <span class="rating-number">&nbsp;05</span>
-                                        <span class="rating-number-bracket">)</span>
-                                    </div>
-                                </div>
-                                <!-- /item-rating -->
+                            <div class="item-img">
+                                <a href="">
+                                    <img src="img/tabs-img.png" alt="">
+                                </a>
                             </div>
-                            <!-- /item -->
+                            <div class="item-text">
+                                <div class="item-name">
+                                    <div class="item-title">
+                                        <a href="product-details.html" target="_blank">
+                                            The Post Grid Pro
+                                        </a>
+                                    </div>
+                                    <div class="item-subtitle">
+                                        WordPress Plugin
+                                    </div>
+                                </div>
+                                <div class="item-price">
+                                    $15
+                                </div>
+                            </div>
+                            <!-- /item-text -->
+                            <div class="item-rating">
+                                <div class="item-rating-img">
+                                    <img src="img/item-rating-img.png" alt="">
+                                    <span class="item-author">PsdBosS</span>
+                                </div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-number-bracket">(</span>
+                                    <span class="rating-number">&nbsp;05</span>
+                                    <span class="rating-number-bracket">)</span>
+                                </div>
+                            </div>
+                            <!-- /item-rating -->
+                        </div>
+                        <!-- /item label -->
 
+                        <div class="item">
+                            <div class="item-img">
+                                <a href="">
+                                    <img src="img/tabs-img.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-text">
+                                <div class="item-name">
+                                    <div class="item-title">
+                                        <a href="">
+                                            Food Menu
+                                        </a>
+                                    </div>
+                                    <div class="item-subtitle">
+                                        WordPress Plugin
+                                    </div>
+                                </div>
+                                <div class="item-price">$20</div>
+                            </div>
+                            <!-- /item-text -->
+                            <div class="item-rating">
+                                <div class="item-rating-img">
+                                    <img src="img/item-rating-img.png" alt="">
+                                    <span class="item-author">Manilip</span>
+                                </div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-number-bracket">(</span>
+                                    <span class="rating-number">&nbsp;05</span>
+                                    <span class="rating-number-bracket">)</span>
+                                </div>
+                            </div>
+                            <!-- /item-rating -->
+                        </div>
+                        <!-- /item -->
+
+                        <div class="item">
+                            <div class="item-img">
+                                <a href="">
+                                    <img src="img/tabs-img.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-text">
+                                <div class="item-name">
+                                    <div class="item-title">
+                                        <a href="">
+                                            Imac Mockup
+                                        </a>
+                                    </div>
+                                    <div class="item-subtitle">
+                                        Psd Template
+                                    </div>
+                                </div>
+                                <div class="item-price">$12</div>
+                            </div>
+                            <!-- /item-text -->
+                            <div class="item-rating">
+                                <div class="item-rating-img">
+                                    <img src="img/item-rating-img.png" alt="">
+                                    <span class="item-author">Lolypop</span>
+                                </div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-number-bracket">(</span>
+                                    <span class="rating-number">&nbsp;05</span>
+                                    <span class="rating-number-bracket">)</span>
+                                </div>
+                            </div>
+                            <!-- /item-rating -->
+                        </div>
+                        <!-- /item -->
+
+                        <div class="item">
+                            <div class="item-img">
+                                <a href="">
+                                    <img src="img/tabs-img.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-text">
+                                <div class="item-name">
+                                    <div class="item-title"><a href="">Gymedge</a></div>
+                                    <div class="item-subtitle">Joomla Template</div>
+                                </div>
+                                <div class="item-price">$45</div>
+                            </div>
+                            <!-- /item-text -->
+                            <div class="item-rating">
+                                <div class="item-rating-img">
+                                    <img src="img/item-rating-img.png" alt="">
+                                    <span class="item-author">Micrsof</span>
+                                </div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-number-bracket">(</span>
+                                    <span class="rating-number">&nbsp;05</span>
+                                    <span class="rating-number-bracket">)</span>
+                                </div>
+                            </div>
+                            <!-- /item-rating -->
+                        </div>
+                        <!-- /item -->
+
+                        <div class="item">
+                            <div class="item-img">
+                                <a href="">
+                                    <img src="img/tabs-img.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-text">
+                                <div class="item-name">
+                                    <div class="item-title">
+                                        <a href="">
+                                            The Post Grid Pro
+                                        </a>
+                                    </div>
+                                    <div class="item-subtitle">
+                                        WordPress Plugin
+                                    </div>
+                                </div>
+                                <div class="item-price">$19</div>
+                            </div>
+                            <!-- /item-text -->
+                            <div class="item-rating">
+                                <div class="item-rating-img">
+                                    <img src="img/item-rating-img.png" alt="">
+                                    <span class="item-author">Raklouse</span>
+                                </div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-number-bracket">(</span>
+                                    <span class="rating-number">&nbsp;05</span>
+                                    <span class="rating-number-bracket">)</span>
+                                </div>
+                            </div>
+                            <!-- /item-rating -->
+                        </div>
+                        <!-- /item -->
+
+                        <div class="item label">
+                            <div class="label-sign">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="item-img">
+                                <a href="">
+                                    <img src="img/tabs-img.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-text">
+                                <div class="item-name">
+                                    <div class="item-title">
+                                        <a href="">
+                                            Doll Face
+                                        </a>
+                                    </div>
+                                    <div class="item-subtitle">
+                                        Illsatration
+                                    </div>
+                                </div>
+                                <div class="item-price">$10</div>
+                            </div>
+                            <!-- /item-text -->
+                            <div class="item-rating">
+                                <div class="item-rating-img">
+                                    <img src="img/item-rating-img.png" alt="">
+                                    <span class="item-author">Mikc Art</span>
+                                </div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-number-bracket">(</span>
+                                    <span class="rating-number">&nbsp;05</span>
+                                    <span class="rating-number-bracket">)</span>
+                                </div>
+                            </div>
+                            <!-- /item-rating -->
+                        </div>
+                        <!-- /item label -->
+
+                        <div class="item">
+                            <div class="item-img">
+                                <a href="">
+                                    <img src="img/tabs-img.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-text">
+                                <div class="item-name">
+                                    <div class="item-title">
+                                        <a href="">
+                                            Designer Mockup
+                                        </a>
+                                    </div>
+                                    <div class="item-subtitle">
+                                        PsdTemplate
+                                    </div>
+                                </div>
+                                <div class="item-price">$10</div>
+                            </div>
+                            <!-- /item-text -->
+                            <div class="item-rating">
+                                <div class="item-rating-img">
+                                    <img src="img/item-rating-img.png" alt="">
+                                    <span class="item-author">ThemeLol</span>
+                                </div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-number-bracket">(</span>
+                                    <span class="rating-number">&nbsp;05</span>
+                                    <span class="rating-number-bracket">)</span>
+                                </div>
+                            </div>
+                            <!-- /item-rating -->
+                        </div>
+                        <!-- /item -->
+                    </div>
+                    <!-- /#All -->
+                    <div id="WordPress">
+                        <div class="item label">
+                            <div class="label-sign">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="item-img">
+                                <a href="">
+                                    <img src="img/tabs-img.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-text">
+                                <div class="item-name">
+                                    <div class="item-title">
+                                        <a href="">
+                                            The Post Grid Pro
+                                        </a>
+                                    </div>
+                                    <div class="item-subtitle">
+                                        WordPress Plugin
+                                    </div>
+                                </div>
+                                <div class="item-price">$15</div>
+                            </div>
+                            <!-- /item-text -->
+                            <div class="item-rating">
+                                <div class="item-rating-img">
+                                    <img src="img/item-rating-img.png" alt="">
+                                    <span class="item-author">PsdBosS</span>
+                                </div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-number-bracket">(</span>
+                                    <span class="rating-number">&nbsp;05</span>
+                                    <span class="rating-number-bracket">)</span>
+                                </div>
+                            </div>
+                            <!-- /item-rating -->
+                        </div>
+                        <!-- /item label -->
+
+
+                        <div class="item">
+                            <div class="item-img">
+                                <a href="">
+                                    <img src="img/tabs-img.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-text">
+                                <div class="item-name">
+                                    <div class="item-title">
+                                        <a href="">
+                                            Food Menu
+                                        </a>
+                                    </div>
+                                    <div class="item-subtitle">
+                                        WordPress Plugin
+                                    </div>
+                                </div>
+                                <div class="item-price">$20</div>
+                            </div>
+                            <!-- /item-text -->
+                            <div class="item-rating">
+                                <div class="item-rating-img">
+                                    <img src="img/item-rating-img.png" alt="">
+                                    <span class="item-author">Manilip</span>
+                                </div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-number-bracket">(</span>
+                                    <span class="rating-number">&nbsp;05</span>
+                                    <span class="rating-number-bracket">)</span>
+                                </div>
+                            </div>
+                            <!-- /item-rating -->
+                        </div>
+                        <!-- /item -->
+
+                        <div class="item">
+                            <div class="item-img">
+                                <a href="">
+                                    <img src="img/tabs-img.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-text">
+                                <div class="item-name">
+                                    <div class="item-title">
+                                        <a href="">
+                                            The Post Grid Pro
+                                        </a>
+                                    </div>
+                                    <div class="item-subtitle">
+                                        WordPress Plugin
+                                    </div>
+                                </div>
+                                <div class="item-price">$19</div>
+                            </div>
+                            <!-- /item-text -->
+                            <div class="item-rating">
+                                <div class="item-rating-img">
+                                    <img src="img/item-rating-img.png" alt="">
+                                    <span class="item-author">Raklouse</span>
+                                </div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-number-bracket">(</span>
+                                    <span class="rating-number">&nbsp;05</span>
+                                    <span class="rating-number-bracket">)</span>
+                                </div>
+                            </div>
+                            <!-- /item-rating -->
+                        </div>
+                        <!-- /item -->
+                    </div>
+                    <!-- /#WordPress -->
+                    <div id="Joomla">
+                        <div class="item">
+                            <div class="item-img">
+                                <a href="">
+                                    <img src="img/tabs-img.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-text">
+                                <div class="item-name">
+                                    <div class="item-title">
+                                        <a href="">
+                                            Gymedge
+                                        </a>
+                                    </div>
+                                    <div class="item-subtitle">
+                                        Joomla Template
+                                    </div>
+                                </div>
+                                <div class="item-price">$45</div>
+                            </div>
+                            <!-- /item-text -->
+                            <div class="item-rating">
+                                <div class="item-rating-img">
+                                    <img src="img/item-rating-img.png" alt="">
+                                    <span class="item-author">Micrsof</span>
+                                </div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-number-bracket">(</span>
+                                    <span class="rating-number">&nbsp;05</span>
+                                    <span class="rating-number-bracket">)</span>
+                                </div>
+                            </div>
+                            <!-- /item-rating -->
+                        </div>
+                        <!-- /item -->
+
+                        <div class="item">
+                            <div class="item-img">
+                                <a href="">
+                                    <img src="img/tabs-img.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-text">
+                                <div class="item-name">
+                                    <div class="item-title">
+                                        <a href="">
+                                            Mobile APP
+                                        </a>
+                                    </div>
+                                    <div class="item-subtitle">
+                                        Site Template
+                                    </div>
+                                </div>
+                                <div class="item-price">$19</div>
+                            </div>
+                            <!-- /item-text -->
+                            <div class="item-rating">
+                                <div class="item-rating-img">
+                                    <img src="img/item-rating-img.png" alt="">
+                                    <span class="item-author">Radiustheme</span>
+                                </div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-number-bracket">(</span>
+                                    <span class="rating-number">&nbsp;05</span>
+                                    <span class="rating-number-bracket">)</span>
+                                </div>
+                            </div>
+                            <!-- /item-rating -->
+                        </div>
+                        <!-- /item -->
+                    </div>
+                    <!-- /#Joomla -->
+                    <div id="Plugins">
+                        <div class="item label">
+                            <div class="label-sign">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="item-img">
+                                <a href="">
+                                    <img src="img/tabs-img.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-text">
+                                <div class="item-name">
+                                    <div class="item-title">
+                                        <a href="">
+                                            The Post Grid Pro
+                                        </a>
+                                    </div>
+                                    <div class="item-subtitle">
+                                        WordPress Plugin
+                                    </div>
+                                </div>
+                                <div class="item-price">$15</div>
+                            </div>
+                            <!-- /item-text -->
+                            <div class="item-rating">
+                                <div class="item-rating-img">
+                                    <img src="img/item-rating-img.png" alt="">
+                                    <span class="item-author">PsdBosS</span>
+                                </div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-number-bracket">(</span>
+                                    <span class="rating-number">&nbsp;05</span>
+                                    <span class="rating-number-bracket">)</span>
+                                </div>
+                            </div>
+                            <!-- /item-rating -->
+                        </div>
+                        <!-- /item label -->
+
+                        <div class="item">
+                            <div class="item-img">
+                                <a href="">
+                                    <img src="img/tabs-img.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-text">
+                                <div class="item-name">
+                                    <div class="item-title">
+                                        <a href="">
+                                            Food Menu
+                                        </a>
+                                    </div>
+                                    <div class="item-subtitle">
+                                        WordPress Plugin
+                                    </div>
+                                </div>
+                                <div class="item-price">$20</div>
+                            </div>
+                            <!-- /item-text -->
+                            <div class="item-rating">
+                                <div class="item-rating-img">
+                                    <img src="img/item-rating-img.png" alt="">
+                                    <span class="item-author">Manilip</span>
+                                </div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-number-bracket">(</span>
+                                    <span class="rating-number">&nbsp;05</span>
+                                    <span class="rating-number-bracket">)</span>
+                                </div>
+                            </div>
+                            <!-- /item-rating -->
+                        </div>
+                        <!-- /item -->
+
+                        <div class="item">
+                            <div class="item-img">
+                                <a href="">
+                                    <img src="img/tabs-img.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-text">
+                                <div class="item-name">
+                                    <div class="item-title">
+                                        <a href="">
+                                            The Post Grid Pro
+                                        </a>
+                                    </div>
+                                    <div class="item-subtitle">
+                                        WordPress Plugin
+                                    </div>
+                                </div>
+                                <div class="item-price">$19</div>
+                            </div>
+                            <!-- /item-text -->
+                            <div class="item-rating">
+                                <div class="item-rating-img">
+                                    <img src="img/item-rating-img.png" alt="">
+                                    <span class="item-author">Raklouse</span>
+                                </div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-number-bracket">(</span>
+                                    <span class="rating-number">&nbsp;05</span>
+                                    <span class="rating-number-bracket">)</span>
+                                </div>
+                            </div>
+                            <!-- /item-rating -->
+                        </div>
+                        <!-- /item -->
+                    </div>
+                    <!-- /#Plugins -->
+                    <div id="Component">
+                        <div class="item label">
+                            <div class="label-sign">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="item-img">
+                                <a href="">
+                                    <img src="img/tabs-img.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-text">
+                                <div class="item-name">
+                                    <div class="item-title">
+                                        <a href="">
+                                            Doll Face
+                                        </a>
+                                    </div>
+                                    <div class="item-subtitle">
+                                        Illsatration
+                                    </div>
+                                </div>
+                                <div class="item-price">$10</div>
+                            </div>
+                            <!-- /item-text -->
+                            <div class="item-rating">
+                                <div class="item-rating-img">
+                                    <img src="img/item-rating-img.png" alt="">
+                                    <span class="item-author">Mikc Art</span>
+                                </div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-number-bracket">(</span>
+                                    <span class="rating-number">&nbsp;05</span>
+                                    <span class="rating-number-bracket">)</span>
+                                </div>
+                            </div>
+                            <!-- /item-rating -->
+                        </div>
+                        <!-- /item label -->
+                    </div>
+                    <!-- /#Component -->
+
+                    <div id="PSD">
+                        <div class="item">
+                            <div class="item-img">
+                                <a href="">
+                                    <img src="img/tabs-img.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-text">
+                                <div class="item-name">
+                                    <div class="item-title">
+                                        <a href="">
+                                            Imac Mockup
+                                        </a>
+                                    </div>
+                                    <div class="item-subtitle">
+                                        Psd Template
+                                    </div>
+                                </div>
+                                <div class="item-price">$12</div>
+                            </div>
+                            <!-- /item-text -->
+                            <div class="item-rating">
+                                <div class="item-rating-img">
+                                    <img src="img/item-rating-img.png" alt="">
+                                    <span class="item-author">Lolypop</span>
+                                </div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-number-bracket">(</span>
+                                    <span class="rating-number">&nbsp;05</span>
+                                    <span class="rating-number-bracket">)</span>
+                                </div>
+                            </div>
+                            <!-- /item-rating -->
+                        </div>
+                        <!-- /item -->
+
+                        <div class="item">
+                            <div class="item-img">
+                                <a href="">
+                                    <img src="img/tabs-img.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item-text">
+                                <div class="item-name">
+                                    <div class="item-title">
+                                        <a href="">
+                                            Designer Mockup
+                                        </a>
+                                    </div>
+                                    <div class="item-subtitle">
+                                        PsdTemplate
+                                    </div>
+                                </div>
+                                <div class="item-price">$10</div>
+                            </div>
+                            <!-- /item-text -->
+                            <div class="item-rating">
+                                <div class="item-rating-img">
+                                    <img src="img/item-rating-img.png" alt="">
+                                    <span class="item-author">ThemeLol</span>
+                                </div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-number-bracket">(</span>
+                                    <span class="rating-number">&nbsp;05</span>
+                                    <span class="rating-number-bracket">)</span>
+                                </div>
+                            </div>
+                            <!-- /item-rating -->
+                        </div>
+                        <!-- /item -->
+                    </div>
+                    <!-- /#PSD -->
+                </div>
+                <!-- /tabs-items -->
+            </div>
+            <!-- /tabs container-big #tabs -->
+            <div class="buttons">
+                <a href="" class="butn butn-lg">All New Items</a>
+                <a href="" class="butn butn-lg">Popular Items</a>
+            </div>
+        </div>
+        <!-- /container-full -->
+        <!-- TABS END -->
+        <!-- CAROUSEL START -->
+        <div class="this-week container-full bg-white">
+            <h3 class="title">This Week Trending Products</h3>
+            <div class="carousel container-big">
+                <div>
+                    <div class="carousel-wrapper">
+                        <div class="carousel-items">
                             <div class="item label">
                                 <div class="label-sign">
                                     <i class="fas fa-bolt"></i>
@@ -411,255 +965,7 @@
                                     <div class="item-name">
                                         <div class="item-title">
                                             <a href="">
-                                                Doll Face
-                                            </a>
-                                        </div>
-                                        <div class="item-subtitle">
-                                            Illsatration
-                                        </div>
-                                    </div>
-                                    <div class="item-price">$10</div>
-                                </div>
-                                <!-- /item-text -->
-                                <div class="item-rating">
-                                    <div class="item-rating-img">
-                                        <img src="img/item-rating-img.png" alt="">
-                                        <span class="item-author">Mikc Art</span>
-                                    </div>
-                                    <div class="rating-stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span class="rating-number-bracket">(</span>
-                                        <span class="rating-number">&nbsp;05</span>
-                                        <span class="rating-number-bracket">)</span>
-                                    </div>
-                                </div>
-                                <!-- /item-rating -->
-                            </div>
-                            <!-- /item label -->
-
-                            <div class="item">
-                                <div class="item-img">
-                                    <a href="">
-                                        <img src="img/tabs-img.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item-text">
-                                    <div class="item-name">
-                                        <div class="item-title">
-                                            <a href="">
-                                                Designer Mockup
-                                            </a>
-                                        </div>
-                                        <div class="item-subtitle">
-                                            PsdTemplate
-                                        </div>
-                                    </div>
-                                    <div class="item-price">$10</div>
-                                </div>
-                                <!-- /item-text -->
-                                <div class="item-rating">
-                                    <div class="item-rating-img">
-                                        <img src="img/item-rating-img.png" alt="">
-                                        <span class="item-author">ThemeLol</span>
-                                    </div>
-                                    <div class="rating-stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span class="rating-number-bracket">(</span>
-                                        <span class="rating-number">&nbsp;05</span>
-                                        <span class="rating-number-bracket">)</span>
-                                    </div>
-                                </div>
-                                <!-- /item-rating -->
-                            </div>
-                            <!-- /item -->
-                        </div>
-                        <!-- /#All -->
-                        <div id="WordPress">
-                            <div class="item label">
-                                <div class="label-sign">
-                                    <i class="fas fa-bolt"></i>
-                                </div>
-                                <div class="item-img">
-                                    <a href="">
-                                        <img src="img/tabs-img.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item-text">
-                                    <div class="item-name">
-                                        <div class="item-title">
-                                            <a href="">
-                                                The Post Grid Pro
-                                            </a>
-                                        </div>
-                                        <div class="item-subtitle">
-                                            WordPress Plugin
-                                        </div>
-                                    </div>
-                                    <div class="item-price">$15</div>
-                                </div>
-                                <!-- /item-text -->
-                                <div class="item-rating">
-                                    <div class="item-rating-img">
-                                        <img src="img/item-rating-img.png" alt="">
-                                        <span class="item-author">PsdBosS</span>
-                                    </div>
-                                    <div class="rating-stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span class="rating-number-bracket">(</span>
-                                        <span class="rating-number">&nbsp;05</span>
-                                        <span class="rating-number-bracket">)</span>
-                                    </div>
-                                </div>
-                                <!-- /item-rating -->
-                            </div>
-                            <!-- /item label -->
-
-    
-                            <div class="item">
-                                <div class="item-img">
-                                    <a href="">
-                                        <img src="img/tabs-img.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item-text">
-                                    <div class="item-name">
-                                        <div class="item-title">
-                                            <a href="">
-                                                Food Menu
-                                            </a>
-                                        </div>
-                                        <div class="item-subtitle">
-                                            WordPress Plugin
-                                        </div>
-                                    </div>
-                                    <div class="item-price">$20</div>
-                                </div>
-                                <!-- /item-text -->
-                                <div class="item-rating">
-                                    <div class="item-rating-img">
-                                        <img src="img/item-rating-img.png" alt="">
-                                        <span class="item-author">Manilip</span>
-                                    </div>
-                                    <div class="rating-stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span class="rating-number-bracket">(</span>
-                                        <span class="rating-number">&nbsp;05</span>
-                                        <span class="rating-number-bracket">)</span>
-                                    </div>
-                                </div>
-                                <!-- /item-rating -->
-                            </div>
-                            <!-- /item -->
-
-                            <div class="item">
-                                <div class="item-img">
-                                    <a href="">
-                                        <img src="img/tabs-img.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item-text">
-                                    <div class="item-name">
-                                        <div class="item-title">
-                                            <a href="">
-                                                The Post Grid Pro
-                                            </a>
-                                        </div>
-                                        <div class="item-subtitle">
-                                            WordPress Plugin
-                                        </div>
-                                    </div>
-                                    <div class="item-price">$19</div>
-                                </div>
-                                <!-- /item-text -->
-                                <div class="item-rating">
-                                    <div class="item-rating-img">
-                                        <img src="img/item-rating-img.png" alt="">
-                                        <span class="item-author">Raklouse</span>
-                                    </div>
-                                    <div class="rating-stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span class="rating-number-bracket">(</span>
-                                        <span class="rating-number">&nbsp;05</span>
-                                        <span class="rating-number-bracket">)</span>
-                                    </div>
-                                </div>
-                                <!-- /item-rating -->
-                            </div>
-                            <!-- /item -->
-                        </div>
-                        <!-- /#WordPress -->
-                        <div id="Joomla">
-                            <div class="item">
-                                <div class="item-img">
-                                    <a href="">
-                                        <img src="img/tabs-img.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item-text">
-                                    <div class="item-name">
-                                        <div class="item-title">
-                                            <a href="">
-                                                Gymedge
-                                            </a>
-                                        </div>
-                                        <div class="item-subtitle">
-                                            Joomla Template
-                                        </div>
-                                    </div>
-                                    <div class="item-price">$45</div>
-                                </div>
-                                <!-- /item-text -->
-                                <div class="item-rating">
-                                    <div class="item-rating-img">
-                                        <img src="img/item-rating-img.png" alt="">
-                                        <span class="item-author">Micrsof</span>
-                                    </div>
-                                    <div class="rating-stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span class="rating-number-bracket">(</span>
-                                        <span class="rating-number">&nbsp;05</span>
-                                        <span class="rating-number-bracket">)</span>
-                                    </div>
-                                </div>
-                                <!-- /item-rating -->
-                            </div>
-                            <!-- /item -->
-
-                            <div class="item">
-                                <div class="item-img">
-                                    <a href="">
-                                        <img src="img/tabs-img.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item-text">
-                                    <div class="item-name">
-                                        <div class="item-title">
-                                            <a href="">
-                                                Mobile APP
+                                                Responsive Template
                                             </a>
                                         </div>
                                         <div class="item-subtitle">
@@ -687,10 +993,17 @@
                                 </div>
                                 <!-- /item-rating -->
                             </div>
-                            <!-- /item -->
+                            <!-- /item label -->
                         </div>
-                        <!-- /#Joomla -->
-                        <div id="Plugins">
+                        <!-- / carousel-items -->
+                    </div>
+                    <!-- / carousel-wrapper -->
+                </div>
+                <!-- /empty div -->
+
+                <div>
+                    <div class="carousel-wrapper">
+                        <div class="carousel-items">
                             <div class="item label">
                                 <div class="label-sign">
                                     <i class="fas fa-bolt"></i>
@@ -733,8 +1046,20 @@
                                 <!-- /item-rating -->
                             </div>
                             <!-- /item label -->
-    
-                            <div class="item">
+                        </div>
+                        <!-- /carousel-items -->
+                    </div>
+                    <!-- / carousel-wrapper -->
+                </div>
+                <!-- /empty div -->
+
+                <div>
+                    <div class="carousel-wrapper">
+                        <div class="carousel-items">
+                            <div class="item label">
+                                <div class="label-sign">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
                                 <div class="item-img">
                                     <a href="">
                                         <img src="img/tabs-img.png" alt="">
@@ -744,11 +1069,11 @@
                                     <div class="item-name">
                                         <div class="item-title">
                                             <a href="">
-                                                Food Menu
+                                                Logo Showcase
                                             </a>
                                         </div>
                                         <div class="item-subtitle">
-                                            WordPress Plugin
+                                            Joomla Cmponent
                                         </div>
                                     </div>
                                     <div class="item-price">$20</div>
@@ -772,50 +1097,17 @@
                                 </div>
                                 <!-- /item-rating -->
                             </div>
-                            <!-- /item -->
-
-                            <div class="item">
-                                <div class="item-img">
-                                    <a href="">
-                                        <img src="img/tabs-img.png" alt="">
-                                     </a>
-                                </div>
-                                <div class="item-text">
-                                    <div class="item-name">
-                                        <div class="item-title">
-                                            <a href="">
-                                                The Post Grid Pro
-                                            </a>
-                                        </div>
-                                        <div class="item-subtitle">
-                                            WordPress Plugin
-                                        </div>
-                                    </div>
-                                    <div class="item-price">$19</div>
-                                </div>
-                                <!-- /item-text -->
-                                <div class="item-rating">
-                                    <div class="item-rating-img">
-                                        <img src="img/item-rating-img.png" alt="">
-                                        <span class="item-author">Raklouse</span>
-                                    </div>
-                                    <div class="rating-stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span class="rating-number-bracket">(</span>
-                                        <span class="rating-number">&nbsp;05</span>
-                                        <span class="rating-number-bracket">)</span>
-                                    </div>
-                                </div>
-                                <!-- /item-rating -->
-                            </div>
-                            <!-- /item -->
+                            <!-- /item label -->
                         </div>
-                        <!-- /#Plugins -->
-                        <div id="Component">
+                        <!-- /carousel-items -->
+                    </div>
+                    <!-- / carousel-wrapper -->
+                </div>
+                <!-- /empty div -->
+
+                <div>
+                    <div class="carousel-wrapper">
+                        <div class="carousel-items">
                             <div class="item label">
                                 <div class="label-sign">
                                     <i class="fas fa-bolt"></i>
@@ -829,50 +1121,7 @@
                                     <div class="item-name">
                                         <div class="item-title">
                                             <a href="">
-                                                Doll Face
-                                            </a>
-                                        </div>
-                                        <div class="item-subtitle">
-                                            Illsatration
-                                        </div>
-                                    </div>
-                                    <div class="item-price">$10</div>
-                                </div>
-                                <!-- /item-text -->
-                                <div class="item-rating">
-                                    <div class="item-rating-img">
-                                        <img src="img/item-rating-img.png" alt="">
-                                        <span class="item-author">Mikc Art</span>
-                                    </div>
-                                    <div class="rating-stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <span class="rating-number-bracket">(</span>
-                                        <span class="rating-number">&nbsp;05</span>
-                                        <span class="rating-number-bracket">)</span>
-                                    </div>
-                                </div>
-                                <!-- /item-rating -->
-                            </div>
-                            <!-- /item label -->
-                        </div>
-                        <!-- /#Component -->
-
-                        <div id="PSD">
-                            <div class="item">
-                                <div class="item-img">
-                                    <a href="">
-                                        <img src="img/tabs-img.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="item-text">
-                                    <div class="item-name">
-                                        <div class="item-title">
-                                            <a href="">
-                                                Imac Mockup
+                                                UI Design
                                             </a>
                                         </div>
                                         <div class="item-subtitle">
@@ -900,9 +1149,21 @@
                                 </div>
                                 <!-- /item-rating -->
                             </div>
-                            <!-- /item -->
+                            <!-- /item label -->
+                        </div>
+                        <!-- / carousel-items -->
+                    </div>
+                    <!-- / carousel-wrapper -->
+                </div>
+                <!-- /empty div -->
 
-                            <div class="item">
+                <div>
+                    <div class="carousel-wrapper">
+                        <div class="carousel-items">
+                            <div class="item label">
+                                <div class="label-sign">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
                                 <div class="item-img">
                                     <a href="">
                                         <img src="img/tabs-img.png" alt="">
@@ -912,20 +1173,20 @@
                                     <div class="item-name">
                                         <div class="item-title">
                                             <a href="">
-                                                Designer Mockup
+                                                Responsive Template
                                             </a>
                                         </div>
                                         <div class="item-subtitle">
-                                            PsdTemplate
+                                            Site Template
                                         </div>
                                     </div>
-                                    <div class="item-price">$10</div>
+                                    <div class="item-price">$19</div>
                                 </div>
                                 <!-- /item-text -->
                                 <div class="item-rating">
                                     <div class="item-rating-img">
                                         <img src="img/item-rating-img.png" alt="">
-                                        <span class="item-author">ThemeLol</span>
+                                        <span class="item-author">Radiustheme</span>
                                     </div>
                                     <div class="rating-stars">
                                         <i class="fas fa-star"></i>
@@ -940,410 +1201,141 @@
                                 </div>
                                 <!-- /item-rating -->
                             </div>
-                            <!-- /item -->
+                            <!-- /item label -->
                         </div>
-                        <!-- /#PSD -->
+                        <!-- / carousel-items -->
                     </div>
-                    <!-- /tabs-items -->
+                    <!-- / carousel-wrapper -->
                 </div>
-                <!-- /tabs container-big #tabs -->
-                <div class="buttons">
-                    <a href="" class="butn butn-lg">All New Items</a>
-                    <a href="" class="butn butn-lg">Popular Items</a>
+                <!-- /empty div -->
+
+                <div>
+                    <div class="carousel-wrapper">
+                        <div class="carousel-items">
+                            <div class="item label">
+                                <div class="label-sign">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <div class="item-img">
+                                    <a href="">
+                                        <img src="img/tabs-img.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="item-text">
+                                    <div class="item-name">
+                                        <div class="item-title">
+                                            <a href="">
+                                                Responsive Template
+                                            </a>
+                                        </div>
+                                        <div class="item-subtitle">
+                                            Site Template
+                                        </div>
+                                    </div>
+                                    <div class="item-price">$19</div>
+                                </div>
+                                <!-- /item-text -->
+                                <div class="item-rating">
+                                    <div class="item-rating-img">
+                                        <img src="img/item-rating-img.png" alt="">
+                                        <span class="item-author">Radiustheme</span>
+                                    </div>
+                                    <div class="rating-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span class="rating-number-bracket">(</span>
+                                        <span class="rating-number">&nbsp;05</span>
+                                        <span class="rating-number-bracket">)</span>
+                                    </div>
+                                </div>
+                                <!-- /item-rating -->
+                            </div>
+                            <!-- /item label -->
+                        </div>
+                        <!-- / carousel-items -->
+                    </div>
+                    <!-- / carousel-wrapper -->
                 </div>
+                <!-- /empty div -->
             </div>
-            <!-- /container-full -->
-            <!-- TABS END -->
-            <!-- CAROUSEL START -->
-            <div class="this-week container-full bg-white">
-                <h3 class="title">This Week Trending Products</h3>
-                <div class="carousel container-big">
-                    <div>
-                        <div class="carousel-wrapper">
-                            <div class="carousel-items">
-                                <div class="item label">
-                                    <div class="label-sign">
-                                        <i class="fas fa-bolt"></i>
-                                    </div>
-                                    <div class="item-img">
-                                        <a href="">
-                                            <img src="img/tabs-img.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="item-text">
-                                        <div class="item-name">
-                                            <div class="item-title">
-                                                <a href="">
-                                                    Responsive Template
-                                                </a>
-                                            </div>
-                                            <div class="item-subtitle">
-                                                Site Template
-                                            </div>
-                                        </div>
-                                        <div class="item-price">$19</div>
-                                    </div>
-                                    <!-- /item-text -->
-                                    <div class="item-rating">
-                                        <div class="item-rating-img">
-                                            <img src="img/item-rating-img.png" alt="">
-                                            <span class="item-author">Radiustheme</span>
-                                        </div>
-                                        <div class="rating-stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <span class="rating-number-bracket">(</span>
-                                            <span class="rating-number">&nbsp;05</span>
-                                            <span class="rating-number-bracket">)</span>
-                                        </div>
-                                    </div>
-                                    <!-- /item-rating -->
-                                </div>
-                                <!-- /item label -->
-                            </div>
-                            <!-- / carousel-items -->
-                        </div>
-                        <!-- / carousel-wrapper -->
-                    </div>
-                    <!-- /empty div -->
-
-                    <div>
-                        <div class="carousel-wrapper">
-                            <div class="carousel-items">
-                                <div class="item label">
-                                    <div class="label-sign">
-                                        <i class="fas fa-bolt"></i>
-                                    </div>
-                                    <div class="item-img">
-                                        <a href="">
-                                            <img src="img/tabs-img.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="item-text">
-                                        <div class="item-name">
-                                            <div class="item-title">
-                                                <a href="">
-                                                    The Post Grid Pro
-                                                </a>
-                                            </div>
-                                            <div class="item-subtitle">
-                                                WordPress Plugin
-                                            </div>
-                                        </div>
-                                        <div class="item-price">$15</div>
-                                    </div>
-                                    <!-- /item-text -->
-                                    <div class="item-rating">
-                                        <div class="item-rating-img">
-                                            <img src="img/item-rating-img.png" alt="">
-                                            <span class="item-author">PsdBosS</span>
-                                        </div>
-                                        <div class="rating-stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <span class="rating-number-bracket">(</span>
-                                            <span class="rating-number">&nbsp;05</span>
-                                            <span class="rating-number-bracket">)</span>
-                                        </div>
-                                    </div>
-                                    <!-- /item-rating -->
-                                </div>
-                                <!-- /item label -->
-                            </div>
-                            <!-- /carousel-items -->
-                        </div>
-                        <!-- / carousel-wrapper -->
-                    </div>
-                    <!-- /empty div -->
-
-                    <div>
-                        <div class="carousel-wrapper">
-                            <div class="carousel-items">
-                                <div class="item label">
-                                    <div class="label-sign">
-                                        <i class="fas fa-bolt"></i>
-                                    </div>
-                                    <div class="item-img">
-                                        <a href="">
-                                            <img src="img/tabs-img.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="item-text">
-                                        <div class="item-name">
-                                            <div class="item-title">
-                                                <a href="">
-                                                    Logo Showcase
-                                                </a>
-                                            </div>
-                                            <div class="item-subtitle">
-                                                Joomla Cmponent
-                                            </div>
-                                        </div>
-                                        <div class="item-price">$20</div>
-                                    </div>
-                                    <!-- /item-text -->
-                                    <div class="item-rating">
-                                        <div class="item-rating-img">
-                                            <img src="img/item-rating-img.png" alt="">
-                                            <span class="item-author">Manilip</span>
-                                        </div>
-                                        <div class="rating-stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <span class="rating-number-bracket">(</span>
-                                            <span class="rating-number">&nbsp;05</span>
-                                            <span class="rating-number-bracket">)</span>
-                                        </div>
-                                    </div>
-                                    <!-- /item-rating -->
-                                </div>
-                                <!-- /item label -->
-                            </div>
-                            <!-- /carousel-items -->
-                        </div>
-                        <!-- / carousel-wrapper -->
-                    </div>
-                    <!-- /empty div -->
-
-                    <div>
-                        <div class="carousel-wrapper">
-                            <div class="carousel-items">
-                                <div class="item label">
-                                    <div class="label-sign">
-                                        <i class="fas fa-bolt"></i>
-                                    </div>
-                                    <div class="item-img">
-                                        <a href="">
-                                            <img src="img/tabs-img.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="item-text">
-                                        <div class="item-name">
-                                            <div class="item-title">
-                                                <a href="">
-                                                    UI Design
-                                                </a>
-                                            </div>
-                                            <div class="item-subtitle">
-                                                Psd Template
-                                            </div>
-                                        </div>
-                                        <div class="item-price">$12</div>
-                                    </div>
-                                    <!-- /item-text -->
-                                    <div class="item-rating">
-                                        <div class="item-rating-img">
-                                            <img src="img/item-rating-img.png" alt="">
-                                            <span class="item-author">Lolypop</span>
-                                        </div>
-                                        <div class="rating-stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <span class="rating-number-bracket">(</span>
-                                            <span class="rating-number">&nbsp;05</span>
-                                            <span class="rating-number-bracket">)</span>
-                                        </div>
-                                    </div>
-                                    <!-- /item-rating -->
-                                </div>
-                                <!-- /item label -->
-                            </div>
-                            <!-- / carousel-items -->
-                        </div>
-                        <!-- / carousel-wrapper -->
-                    </div>
-                    <!-- /empty div -->
-
-                    <div>
-                        <div class="carousel-wrapper">
-                            <div class="carousel-items">
-                                <div class="item label">
-                                    <div class="label-sign">
-                                        <i class="fas fa-bolt"></i>
-                                    </div>
-                                    <div class="item-img">
-                                        <a href="">
-                                            <img src="img/tabs-img.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="item-text">
-                                        <div class="item-name">
-                                            <div class="item-title">
-                                                <a href="">
-                                                    Responsive Template
-                                                </a>
-                                            </div>
-                                            <div class="item-subtitle">
-                                                Site Template
-                                            </div>
-                                        </div>
-                                        <div class="item-price">$19</div>
-                                    </div>
-                                    <!-- /item-text -->
-                                    <div class="item-rating">
-                                        <div class="item-rating-img">
-                                            <img src="img/item-rating-img.png" alt="">
-                                            <span class="item-author">Radiustheme</span>
-                                        </div>
-                                        <div class="rating-stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <span class="rating-number-bracket">(</span>
-                                            <span class="rating-number">&nbsp;05</span>
-                                            <span class="rating-number-bracket">)</span>
-                                        </div>
-                                    </div>
-                                    <!-- /item-rating -->
-                                </div>
-                                <!-- /item label -->
-                            </div>
-                            <!-- / carousel-items -->
-                        </div>
-                        <!-- / carousel-wrapper -->
-                    </div>
-                    <!-- /empty div -->
-
-                    <div>
-                        <div class="carousel-wrapper">
-                            <div class="carousel-items">
-                                <div class="item label">
-                                    <div class="label-sign">
-                                        <i class="fas fa-bolt"></i>
-                                    </div>
-                                    <div class="item-img">
-                                        <a href="">
-                                            <img src="img/tabs-img.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="item-text">
-                                        <div class="item-name">
-                                            <div class="item-title">
-                                                <a href="">
-                                                     Responsive Template
-                                                </a>
-                                            </div>
-                                            <div class="item-subtitle">
-                                                Site Template
-                                            </div>
-                                        </div>
-                                        <div class="item-price">$19</div>
-                                    </div>
-                                    <!-- /item-text -->
-                                    <div class="item-rating">
-                                        <div class="item-rating-img">
-                                            <img src="img/item-rating-img.png" alt="">
-                                            <span class="item-author">Radiustheme</span>
-                                        </div>
-                                        <div class="rating-stars">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <span class="rating-number-bracket">(</span>
-                                            <span class="rating-number">&nbsp;05</span>
-                                            <span class="rating-number-bracket">)</span>
-                                        </div>
-                                    </div>
-                                    <!-- /item-rating -->
-                                </div>
-                                <!-- /item label -->
-                            </div>
-                            <!-- / carousel-items -->
-                        </div>
-                        <!-- / carousel-wrapper -->
-                    </div>
-                    <!-- /empty div -->
-                </div>
-                <!-- / carousel -->
-            </div>
-            <!-- this-week container-full -->
-            <!-- CAROUSEL END -->
-            <!-- WHY-CHOOSE START -->
-            <div class="why-choose container-full bg-dark">
-                <h3 class="title">Why You Choose Foxtar Market Place?</h3>
-                <div class="container-md">
-                    <div class="why-choose-items">
-                        <div class="why-choose-item">
-                            <div class="circle">
-                                <a href="">
-                                    <img src="img/circle.png" alt="">
-                                </a>
-                            </div>
-                            <div class="why-choose-subtitle">
-                                <a href="">Easily Buy & Sell </a>
-                            </div>
-                            <div class="why-choose-text">
-                                Dorem Ipsum is simply dummy text of the pring 
-                                and typesetting industry. Lorem Ipsum has been 
-                                the industry's standaum.
-                            </div>
-                        </div>
-                        <!-- /why-choose-item -->
-                        <div class="why-choose-item">
-                            <div class="circle">
-                                <a href="">
-                                    <img src="img/circle.png" alt="">
-                                </a>
-                            </div>
-                            <div class="why-choose-subtitle">
-                                <a href="">Quality Products</a> 
-                            </div>
-                            <div class="why-choose-text">
-                                Dorem Ipsum is simply dummy text of the pring 
-                                and typesetting industry. Lorem Ipsum has been 
-                                the industry's standaum.
-                            </div>
-                        </div>
-                        <!-- /why-choose-item -->
-
-                        <div class="why-choose-item">
-                            <div class="circle">
-                                <a href="">
-                                    <img src="img/circle.png" alt="">
-                                </a>
-                            </div>
-                            <div class="why-choose-subtitle">
-                                <a href="">100% Secure Payment</a> 
-                            </div>
-                            <div class="why-choose-text">
-                                Dorem Ipsum is simply dummy text of the pring 
-                                and typesetting industry. Lorem Ipsum has been 
-                                the industry's standaum.
-                            </div>
-                        </div>
-                        <!-- /why-choose-item -->
-                    </div>
-                    <!-- /why-choose-items -->
-                </div>
-                <!-- /container-md -->
-            </div>   
-            <!-- WHY-CHOOSE END -->
+            <!-- / carousel -->
         </div>
-        <!-- /#main -->
-  
-  
-  
-    
-       
+        <!-- this-week container-full -->
+        <!-- CAROUSEL END -->
+        <!-- WHY-CHOOSE START -->
+        <div class="why-choose container-full bg-dark">
+            <h3 class="title">Why You Choose Foxtar Market Place?</h3>
+            <div class="container-md">
+                <div class="why-choose-items">
+                    <div class="why-choose-item">
+                        <div class="circle">
+                            <a href="">
+                                <img src="img/circle.png" alt="">
+                            </a>
+                        </div>
+                        <div class="why-choose-subtitle">
+                            <a href="">Easily Buy & Sell </a>
+                        </div>
+                        <div class="why-choose-text">
+                            Dorem Ipsum is simply dummy text of the pring
+                            and typesetting industry. Lorem Ipsum has been
+                            the industry's standaum.
+                        </div>
+                    </div>
+                    <!-- /why-choose-item -->
+                    <div class="why-choose-item">
+                        <div class="circle">
+                            <a href="">
+                                <img src="img/circle.png" alt="">
+                            </a>
+                        </div>
+                        <div class="why-choose-subtitle">
+                            <a href="">Quality Products</a>
+                        </div>
+                        <div class="why-choose-text">
+                            Dorem Ipsum is simply dummy text of the pring
+                            and typesetting industry. Lorem Ipsum has been
+                            the industry's standaum.
+                        </div>
+                    </div>
+                    <!-- /why-choose-item -->
+
+                    <div class="why-choose-item">
+                        <div class="circle">
+                            <a href="">
+                                <img src="img/circle.png" alt="">
+                            </a>
+                        </div>
+                        <div class="why-choose-subtitle">
+                            <a href="">100% Secure Payment</a>
+                        </div>
+                        <div class="why-choose-text">
+                            Dorem Ipsum is simply dummy text of the pring
+                            and typesetting industry. Lorem Ipsum has been
+                            the industry's standaum.
+                        </div>
+                    </div>
+                    <!-- /why-choose-item -->
+                </div>
+                <!-- /why-choose-items -->
+            </div>
+            <!-- /container-md -->
+        </div>
+        <!-- WHY-CHOOSE END -->
+    </div>
+    <!-- /#main -->
+
+
+
+
+
     <div id="footer"></div>
 
 
     <script src="js/scripts.js"></script>
 </body>
+
 </html>

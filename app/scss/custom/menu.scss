@@ -54,6 +54,16 @@
     z-index: 1;
   }
 
+  .header_text {
+      font-weight: bold;
+      span:nth-child(1){
+      color: $red;
+      }
+      span:nth-child(2){
+          color: $blue;
+      }
+  }
+
 @media(max-width:1180px){
    .header_menu {
     padding-left: 20px;
@@ -70,16 +80,13 @@
         background: transparent;
         color: #fff;
         float: right;
+    }    
+}
+    
+@media(max-width: 425px){
+    .slicknav_nav {
+        margin-right: 10px;
     }
 
-
-    
 }
     
-@media(max-width:600px){
-
-}
-    
-@media(max-width:376px){
-    
-}

@@ -6,16 +6,14 @@
     @include flexible-sp-btw ();
     @include container ();
     padding: 27px 0;
-    line-height: 40px;
     .section_registr {
         @include flexible ();
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
-        span {
-            color: $red;
-            span {
-                color: $blue;
-            }
+        align-items: center;
+        flex-wrap: nowrap;
+        .header_simbols {
+            display:flex;
         }
     }
 }
@@ -29,14 +27,13 @@
     color: $white;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;    
-    display: inline;    
+    display: inline-block;    
 }
 
 .btn_login {
     background-color: $green;
     margin-right: 7px;
     border: 1px solid $green;
-    padding: 10px 17px;
 }
 .btn_reg {
     background-color: $red;
@@ -44,10 +41,10 @@
 }
 
 .header_basket {
-    max-width: 40px;
-    max-height: 42px;
+    width: 40px;
+    height: 42px;
     position: relative;
-    margin: 8px 21px 0px 27px;
+    margin: 0px 21px 0px 27px;
     .sh_cart {
         border-radius: 50%;
         width: 34px;
@@ -63,7 +60,8 @@
     }
 }
 
-.number_cart {
+.sh_cart::after {
+    content: "8";
     font-family: 'Open Sans', sans-serif;
     font-size: 11px;
     color: $white;
@@ -76,12 +74,11 @@
     height: 18px;
     text-align: center;
     line-height: 16px;
+
 }
 
 .btn {
     font-weight: normal;
-    line-height: normal;
-    vertical-align: inherit;
 }
 
 .btn-primary:focus {
@@ -120,62 +117,79 @@
     }
  }
 
- @media(max-width: 800px){
+ @media(max-width: 768px){
      .container {
-        padding-bottom: 0px;
+        padding-bottom: 5px;
         img {
             vertical-align: bottom;
         }
         .section_registr {
             display: flex;
             justify-content: flex-end;
-            flex-wrap: wrap-reverse;
-            max-width: 250px;
+            width: 100%;
             .header_text {
-                font-size: 10px;
+                font-size: 13px;
+            }
+            .header_basket {
+                margin: 0 20px 0 20px;
+            }
+            .header_simbols {
+                .button {
+                    width: 110px;
+                }
+                .btn_login {
+                    margin-right: 20px;
+                }
             }
         }
      }
  }
 
- @media(max-width: 360px){
-     .header_basket{
-         display: none;
-     }
-
-     .header_text {
-        line-height: 14px;
-        max-width: 90px;
-        text-align: right;
-     }
-
-     .header_text span:last-child {
-         display: block;
-     }
- }
-
- @media(max-width: 270px){
+ @media(max-width: 425px){
      .container {
-         flex-direction: column;
-         padding: 27px 20px 0px;
-     .section_registr {
-         max-width: 170px;
-     .header_text {
-         line-height: 14px;
-         max-width: 90px;
-         text-align: right;
-         span {
-             span {
-                 display: block;
-             }
-         }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0px;
+        .section_registr {
+            flex-direction: column-reverse;
+            margin-top: 10px;
+            .header_simbols {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                .button {
+                    width: 200px;
+                }
+                .btn_login {
+                    margin-right: 20px;
+                }
+            }
+            .header_basket {
+                position: absolute;
+                top: 30px;
+                right: 0px;
+            }
+            .header_text {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-top: 10px;
+                span {
+                    margin-bottom: 0px;
+                    font-size: 18px;
+                }
+                
+                span:nth-child(1) {
+                    margin-bottom: 0px;
+                }
+
+            }
+            
         }
-     .header_basket {
-        display: none;
-    }
+     }
 }
-}
- }
+
 
 
 

@@ -5,26 +5,19 @@
 
 .modal-dialog {
     max-width: 730px;
+    margin: 10% auto;
 }
 
 .modal-content {
     background-color: $green;
     width: 730px;
+    border-radius: 0px;
     .modal-header {
         border-bottom: none;
     }
 }
 
 .modal-body {
-    .fa-times {
-        position: absolute;
-        top: 20px;
-        right: 30px;
-        color: $white;
-        font-size: 18px;
-        line-height: 36px;
-        cursor: pointer;
-    }
     display: flex;
     flex-direction: column;
     padding: 91px 165px 115px;
@@ -34,9 +27,24 @@
     letter-spacing: 1px;
     color: $white;
     max-width: 785px;
-    width: 100%; 
-    h1{
-        font-family: 'Roboto', sans-serif;
+    width: 100%;
+    span {
+        width: 400px;
+        font-size: 18px;
+        line-height: 30px;
+        cursor: pointer;
+    }  
+    .fa-times {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: $white;
+        font-size: 18px;
+        line-height: 36px;
+        cursor: pointer;
+    }
+    h1 {
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     text-align: center;
     max-width: 400px;
@@ -56,7 +64,6 @@
             left: 15px;
             color: $white;
             font-size: 14px;
-            
         }
         input {
             width: 100%;
@@ -93,24 +100,22 @@
         justify-content: space-between;
         width: 400px;
         margin-bottom: 28px;
+        text-transform: capitalize;
+        color: $white;
+        
         .btn-submit {
-            padding: 14px 42px;
+            background-color: $dark-green;
+            padding: 12px 42px;
             line-height: 30px;
             display: block;
             width: 140px;
             height: 50px;
-            background-color: #fff;
             text-transform: uppercase;
-            color: #000;
-            font-weight: 700;
             font-size: 14px;
-            box-shadow: 1px 2px 2px #53951f;
             cursor: pointer;
         }
         .btn-acc {
             background-color: $dark-green;
-            text-transform: capitalize;
-            color: #fff;
             position: relative;
             font-size: 18px;
             line-height: 30px;
@@ -126,16 +131,24 @@
             left: 31px;
             top: 18px;
             font-size: 15px;
-        }
-        
+        }  
     }
-    span {
-        width: 400px;
-        font-size: 18px;
-        line-height: 30px;
-        cursor: pointer;
-    }
-   
+    
+}
+
+.modal-buttons .btn-submit:hover {
+    box-shadow: 1px 2px 2px #53951f;
+    background-color: $white;
+    color: #000;
+    font-weight: bold;
+
+}
+
+.modal-buttons .btn-acc:hover {
+    box-shadow: 1px 2px 2px #53951f;
+    background-color: $white;
+    color: #000;
+    font-weight: bold;
 }
 
 .modal-pass ::-webkit-input-placeholder {
@@ -152,15 +165,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.btn-submit a:hover {
-    color: #000;
-}
-
-.btn-acc a:hover {
-    color: $white;
-}
-
-@media(max-width: 730px){
+@media(max-width: 768px){
     .modal-body{
         max-width: 500px;
         margin: 0 auto;
