@@ -12,8 +12,8 @@
 @mixin button {
     border-radius: 5px;
     cursor: pointer;
-    min-height: 30px;
-    min-width: 70px;
+    height: 30px;
+    width: 70px;
     text-align: center;
     padding: 10px;
 }

@@ -31,11 +31,16 @@ $( function() {
                 slidesToShow: 1,
                 slidesToScroll: 1,
             }
-        }
- 
-    ]
+        }]
 
         });
+    });
+});
+
+$(function () {
+    $('#menu').slicknav({
+        appendTo: '#header .header_menu',
+        label: ''
     });
 });
         
