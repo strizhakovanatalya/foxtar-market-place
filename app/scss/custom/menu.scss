@@ -15,7 +15,7 @@
         font-size: 14px;
         letter-spacing: 1px;
         color: $white; 
-        padding: 23px 0px;
+        line-height:61px;
         a {
             padding-right: 40px;
         }
@@ -30,29 +30,28 @@
 .slicknav_nav {
     position: absolute;
     padding: 20px;
-    right: 0px;
+    right: 50px;
     background-color: rgb(38, 50, 56);
-    border-radius: 5px;
     margin-right: 5px;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
-  }
+    z-index: 2;
+}
 
-  .slicknav_nav a:hover {
-      background: $def-color;
-      border-radius: 0px;
-      color: $white;
-  }
+.slicknav_nav a:hover {
+    background: $def-color;
+    border-radius: 0px;
+    color: $white;
+}
   
-  
-  .slicknav_btn {
+.slicknav_btn {
     background: transparent;
     outline: none;
     cursor: pointer;
     margin-top: 12px;
-    z-index: 1;
-  }
+    z-index: 2;
+}
 
 @media(max-width:1180px){
    .header_menu {
@@ -71,15 +70,4 @@
         color: #fff;
         float: right;
     }
-
-
-    
-}
-    
-@media(max-width:600px){
-
-}
-    
-@media(max-width:376px){
-    
 }
