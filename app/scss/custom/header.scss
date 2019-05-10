@@ -5,7 +5,7 @@
 .container {
     @include flexible-sp-btw ();
     @include container ();
-    padding: 27px 0;
+    padding: 25px 0;
     .section_registr {
         @include flexible ();
         font-family: 'Roboto', sans-serif;
@@ -14,6 +14,9 @@
         flex-wrap: nowrap;
         .header_simbols {
             display:flex;
+        }
+        .header_text {
+            font-weight: 400;
         }
     }
 }
@@ -85,19 +88,6 @@
     box-shadow: none;
 }
 
-.btn_login:hover {
-    background-color: $white;
-    color: $green;
-    border-color: $green;
-
-}
-
-.btn_reg:hover {
-    background-color: $white;
-    color: $red;
-    border-color: $red;
-}
-
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
     color: #fff;
     background-color: $green;
@@ -110,6 +100,10 @@
 
 
 
+.btn-primary:hover {
+    background-color: $green;
+    border-color: $green;
+}
 
 @media(max-width:1180px){
     .container {

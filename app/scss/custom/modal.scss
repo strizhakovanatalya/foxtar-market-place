@@ -10,8 +10,12 @@
 
 .modal-content {
     background-color: $green;
-    width: 730px;
-    border-radius: 0px;
+    background-color: #8bc34a;
+    max-width: 730px;
+    border-radius: 0;
+    width: 100%;
+    max-height: 485px;
+    height: 100%;
     .modal-header {
         border-bottom: none;
     }
