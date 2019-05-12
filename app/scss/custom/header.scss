@@ -99,7 +99,7 @@
     border-color: $green;
 }
 
-    &.header-light{
+    .header-light{
         background-color: $white;
         .container {
             @include flexible-sp-btw ();
@@ -121,6 +121,7 @@
     
                 .header-text span{
                     color:$blue;
+                    font-weight: bold;
                 } 
                 
                 .header-simbols{
