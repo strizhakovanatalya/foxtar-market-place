@@ -251,75 +251,6 @@
                     }
                 } 
             }
-    
-            .author-portfolio{
-            
-                .author-portfolio-title{
-                    height:58px;
-                    background-color: #fff;
-                    border:1px solid #dfdfdf;
-                    padding-left: 27px;
-                    font-family: 'Roboto', sans-serif;
-                    font-weight:500;
-                    font-size: 16px;
-                    line-height: 58px;
-                    color:#263238;
-                    margin-bottom:15px;
-                }
-        
-                .author-portfolio-cards{
-                    display:flex;
-                    flex-wrap: wrap;
-                    margin:0 -15px;
-                    justify-content: center;
-    
-                    .card{
-                        min-width:270px;
-                        border:none;
-                        border-radius:0;
-                        margin:15px;
-        
-                        img{
-                            border-radius:0;
-                            width:100px;
-                            height:90px;
-                            vertical-align:bottom;
-                        }
-                        
-                        .card-body{
-                            padding:11px 10px 8px;
-        
-                            .card-title{
-                                font-family:'Roboto', sans-serif;
-                                font-weight: 500;
-                                font-size:14px;
-                                color:#263238;
-                                margin-bottom:5px;
-                                
-                            }
-            
-                            .card-text{
-                                font-family:'Roboto', sans-serif;
-                                font-weight: 400;
-                                font-size:12px;
-                                color:$green;
-                                margin-bottom:5px;
-                            }
-            
-                            .price{
-                                font-family:'Roboto', sans-serif;
-                                font-weight: 700;
-                                font-size:18px;
-                                color:#263238;
-                            } 
-                        } 
-                    }
-                    a .card{
-                        margin:0;
-                        border:1px solid #dfdfdf;
-                    }
-                }
-            } 
         }
     
         .sidebar{
@@ -536,6 +467,85 @@
                 }
             }
         }
+
+        &.bottom{
+
+            .author-portfolio{
+                margin-right:300px;
+            
+                .author-portfolio-title{
+                    height:58px;
+                    background-color: #fff;
+                    border:1px solid #dfdfdf;
+                    padding-left: 27px;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight:500;
+                    font-size: 16px;
+                    line-height: 58px;
+                    color:#263238;
+                    margin-bottom:15px;
+                }
+        
+                .author-portfolio-cards{
+                    display:flex;
+                    flex-wrap: wrap;
+                    margin:0 -15px;
+                    justify-content: center;
+    
+                    .card{
+                        min-width:270px;
+                        border:none;
+                        border-radius:0;
+                        margin:15px;
+        
+                        img{
+                            border-radius:0;
+                            width:100px;
+                            height:90px;
+                            vertical-align:bottom;
+                        }
+                        
+                        .card-body{
+                            padding:11px 10px 8px;
+        
+                            .card-title{
+                                font-family:'Roboto', sans-serif;
+                                font-weight: 500;
+                                font-size:14px;
+                                color:#263238;
+                                margin-bottom:5px;
+                                
+                            }
+            
+                            .card-text{
+                                font-family:'Roboto', sans-serif;
+                                font-weight: 400;
+                                font-size:12px;
+                                color:$green;
+                                margin-bottom:5px;
+                            }
+            
+                            .price{
+                                font-family:'Roboto', sans-serif;
+                                font-weight: 700;
+                                font-size:18px;
+                                color:#263238;
+                            } 
+                        } 
+                    }
+                    a .card{
+                        margin:0;
+                        border:1px solid #dfdfdf;
+                    }
+                }
+            } 
+        }
+    }
+}
+
+@media(max-width:1200px){
+.middle-section.container-full .container-md.bottom .author-portfolio{
+    margin-right:0px;
     }
 }
 
@@ -572,8 +582,6 @@
             }
         }
     }
-
-    
 
     .middle-section.container-full .container-md .product-details .product-details-tabs-items {
         
