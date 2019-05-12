@@ -2,95 +2,102 @@
 @import"../_mixins";
 @import"../_reset";
 
-#header{
-    background-color: $white;
-
-    .container {
-        @include flexible-sp-btw ();
-        @include container ();
-        min-height:92px;
+.container {
+    @include flexible-sp-btw ();
+    @include container ();
+    padding: 25px 0;
+    .section_registr {
+        @include flexible ();
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
         align-items: center;
-        line-height: 40px;
-    
-        .section-registr {
-            @include flexible ();
-            font-family: 'Roboto', sans-serif;
-            font-size: 15px;
-            line-height: 50px;
-            align-items: center;
-
-            .header-text span:first-child {
-                color: $red;
-            }
-
-            .header-text span{
-                color:$blue;
-            }  
-            
-            .header-simbols{
-                display:flex;
-                align-items:center;
-
-                .header-basket {
-                    max-width: 40px;
-                    max-height: 42px;
-                    position: relative;
-                    margin: 8px 21px 0px 27px;
-                    .sh-cart {
-                        border-radius: 50%;
-                        width: 34px;
-                        height: 34px;
-                        background-color: #f5f5f5;
-                        .fa-shopping-cart {
-                            position: absolute;
-                            text-align: center;
-                            left: 23%;
-                            top: 23%;
-                            color: #a0a0a0;
-                        }
-                    }
-
-                    .number-cart {
-                        font-family: 'Open Sans', sans-serif;
-                        font-weight:600;
-                        font-size: 11px;
-                        color: $white;
-                        background-color: $red;
-                        border-radius: 50%;
-                        position: absolute;
-                        top: -10px;
-                        right: 0;
-                        width: 18px;
-                        height: 18px;
-                        text-align: center;
-                        line-height: 17px;
-                    }
-                }
-    
-                .header-buttons{
-                    .btn{
-                        font-family: 'Roboto', sans-serif;
-                        font-size: 12px;  
-                        line-height: 16px;
-                        width:72px;
-                        height:30px;
-                    }
-
-                    .btn-login{
-                        background-color: $green; 
-                        border: 1px solid $green;
-                        margin-right:5px;
-                    }
-
-                    .btn-reg{
-                        background-color: $red;
-                        border: 1px solid $red;
-                    }
-                }  
-            }   
+        flex-wrap: nowrap;
+        .header_simbols {
+            display:flex;
+        }
+        .header_text {
+            font-weight: bold;
         }
     }
+}
 
+.header {
+    background-color: $white;
+}
+
+.button {
+    @include button;
+    color: $white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;    
+    display: inline-block;    
+}
+
+.btn_login {
+    background-color: $green;
+    margin-right: 7px;
+    border: 1px solid $green;
+}
+.btn_reg {
+    background-color: $red;
+    border: 1px solid $red;
+}
+
+.header_basket {
+    width: 40px;
+    height: 42px;
+    position: relative;
+    margin: 0px 21px 0px 27px;
+    .sh_cart {
+        border-radius: 50%;
+        width: 34px;
+        height: 34px;
+        background-color: #f5f5f5;
+        .fa-shopping-cart {
+            position: absolute;
+            text-align: center;
+            left: 23%;
+            top: 23%;
+            color: #a0a0a0;
+        }
+    }
+}
+
+.sh_cart::after {
+    content: "8";
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    color: $white;
+    background-color: $red;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 16px;
+
+}
+
+.btn {
+    font-weight: normal;
+}
+
+.btn-primary:focus {
+    box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: $green;
+    border-color: $green;
+}
+
+.btn-primary:hover {
+    background-color: $green;
+    border-color: $green;
+}
 
     &.header-light{
         background-color: $white;
@@ -201,7 +208,7 @@
             }
         }
     }
-}
+
 
 @media(max-width: 800px){
     .container {
@@ -215,30 +222,84 @@
                 line-height: 14px;
                 text-align: center;
                 padding:20px 0;
-
                 span:first-child {
                     display: block;
                     margin-bottom:15px;
                 }
             } 
 
-            .header-basket{
-                margin:8px 21px 0 0;
+ @media(max-width: 768px){
+     .container {
+        padding-bottom: 5px;
+        img {
+            vertical-align: bottom;
+        }
+        .section_registr {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            .header_text {
+                font-size: 13px;
+            }
+            .header_basket {
+                margin: 0 20px 0 20px;
+            }
+            .header_simbols {
+                .button {
+                    width: 110px;
+                }
+                .btn_login {
+                    margin-right: 20px;
+                }
             }
         }
+     }
+ }
+
+ @media(max-width: 425px){
+     .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0px;
+        .section_registr {
+            flex-direction: column-reverse;
+            margin-top: 10px;
+            .header_simbols {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                .button {
+                    width: 200px;
+                }
+                .btn_login {
+                    margin-right: 20px;
+                }
+            }
+            .header_basket {
+                position: absolute;
+                top: 30px;
+                right: 0px;
+            }
+            .header_text {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-top: 10px;
+                span {
+                    margin-bottom: 0px;
+                    font-size: 18px;
+                }
+                
+                span:nth-child(1) {
+                    margin-bottom: 0px;
+                }
+
+            }
+            
+        }
+     }
     }
 }
-
-@media(max-width: 450px){
-    .header-text{
-        
-        >span{
-            margin-bottom:15px;
-            font-size:18px;
-        }
-        
-        span:last-child {
-            margin-bottom:0;
-        } 
-    } 
-}   
+}
+}

@@ -16,9 +16,6 @@
     <link rel="stylesheet" type="text/css" href="./js/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css">
 
-
-
-    <!---->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -34,15 +31,6 @@
     <script src="./js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
     <link rel="stylesheet" href="./js/slick/slicknav.min.css">
     <link rel="stylesheet" href="css/allstyle.min.css">
-
-    <script>
-        $(function () {
-            $('#menu').slicknav({
-                appendTo: '#header .header_menu',
-                label: ''
-            });
-        });
-    </script>
 </head>
 
 <body>
@@ -81,24 +69,23 @@
     <!--Header-->
     <div id="header">
         <div class="container">
-            <div class="header-img">
+            <div>
                 <img src="./img/logo.png" alt="Logo">
             </div>
-            <div class="section-registr">
-                <div class="header-text">
-                    <span>Need help? </span>
-                    <span>Talk to an expert: </span>
-                    <span>+61 3 8376 6284</span>
+            <div class="section_registr">
+                <div class="header_text">
+                    <span>Need help?</span>
+                    <span> Talk to an expert: +61 3 8376 6284</span>
                 </div>
-                <div class="header-simbols">
-                    <div class="header-basket">
-                        <div class="sh-cart"><i class="fas fa-shopping-cart"></i></div>
-                        <div class="number-cart">8</div>
+                <div class="header_basket">
+                    <div class="sh_cart"><i class="fas fa-shopping-cart"></i></div>
+                </div>
+                <div class="header_simbols">
+                    <div class="button btn_login btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        <a href="#">Login</a>
                     </div>
-                    <div class="header-buttons">
-                        <a href="#" class="btn btn-primary btn-login shadow-none" data-toggle="modal"
-                            data-target="#exampleModal">Login</a>
-                        <a href="#" class="btn btn-primary btn-reg shadow-none">Register</a>
+                    <div class="button btn_reg">
+                        <a href="#">Register</a>
                     </div>
                 </div>
             </div>
@@ -1227,7 +1214,6 @@
                             </div>
                             <!-- / carousel-items -->
                         </div>
-                        <!-- / carousel-wrapper -->
                     </div>
                     <!-- /empty div -->
                 </div>
@@ -1289,21 +1275,24 @@
                         </a>
                         <!-- /why-choose-item -->
                     </div>
-                    <!-- /why-choose-items -->
+                    <!-- /why-choose-item -->
                 </div>
-                <!-- /container-md -->
-            </div>   
-            <!-- WHY-CHOOSE END -->
+                <!-- /why-choose-items -->
+            </div>
+            <!-- /container-md -->
         </div>
-        <!-- /#main -->
-  
-  
-  
-    
-       
+        <!-- WHY-CHOOSE END -->
+    </div>
+    <!-- /#main -->
+
+
+
+
+
     <div id="footer"></div>
 
 
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
