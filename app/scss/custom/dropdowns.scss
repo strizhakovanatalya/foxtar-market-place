@@ -28,6 +28,12 @@
             padding:0;
             background-color: #fff;
             border-color: #fff;
+            margin-right: 20px;
+            &.btn{
+                min-width:160px;
+                min-height:36px;
+                outline:none;
+            }
         }
         
         .dropdown-toggle::after{
@@ -77,6 +83,7 @@
                         margin-right:10px;
                     }
                 }
+               
             }
         }
     }
