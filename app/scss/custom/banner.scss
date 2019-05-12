@@ -69,6 +69,18 @@
             }
         }
     }
+
+    &.banner-light{
+        background: url('../img/bann-small.png') no-repeat center / cover;
+        min-height: 230px;
+        padding:47px 0 62px;
+
+        .banner_text {
+            span {
+                margin-bottom: 30px;
+            }
+        }
+    } 
 }
 
 @media(max-width: 775px){
