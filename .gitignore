@@ -1,4 +1,4 @@
 node_modules
 package-lock.json
-app\css\allstyle.min.css
-app\lib\sprite.css
+app/css/allstyle.min.css
+app/lib/sprite.css
