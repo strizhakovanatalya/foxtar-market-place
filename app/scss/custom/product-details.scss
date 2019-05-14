@@ -26,16 +26,16 @@
             li.breadcrumb-item{
                 font-family: 'Roboto', sans-serif;
                 font-size:15px;
-                color:#b0bec5;
+                color:$breadcrumb;
             }
             
             .breadcrumb-item+.breadcrumb-item::before{
                 content:"-";
-                color:#b0bec5;
+                color:$breadcrumb;
             }
             
             li.breadcrumb-item.active{
-                color:#263238;
+                color:$def-color;
             }
         }
     }
@@ -62,7 +62,7 @@
                 .img-thumbnail{
                     border-radius: 0;
                     padding:18px 19px 16px;
-                    border: 1px solid #dcdcdc;
+                    border: 1px solid $border-img;
                     margin-bottom:40px;
                 }
     
@@ -83,7 +83,7 @@
                         font-weight: 400;
                         font-size: 16px;
                         line-height: 24px;
-                        color:#707070;
+                        color:$md-grey;
                         margin-bottom:45px;
                         max-width:850px;
                     }
@@ -114,11 +114,11 @@
                             }
                             
                             .butn-card.red{
-                                background-color: #e74c3c;
+                                background-color: $red;
                             }
                             
                             .butn-card.dark{
-                                background-color: #455a64;
+                                background-color:$dark;
                             }
                             
                             .butn-card.green{
@@ -150,19 +150,19 @@
                             }
                             
                             .fb{
-                                background-color: #6370b6;
+                                background-color: $fb;
                             }
                             
                             .twit{
-                                background-color: #64b5f6;
+                                background-color: $twit;
                             }
                             
                             .ln{
-                                background-color: #4f71ce;
+                                background-color: $ln;
                             }
                             
                             .pint{
-                                background-color: #d32f2f;
+                                background-color: $pint;
                             }
                         }
                     }
@@ -185,24 +185,24 @@
                     .product-details-butn{
                         text-transform: capitalize;
                         font-family: 'Roboto',sans-serif;
-                        color: #70838d;
+                        color: $lgt-grey;
                         font-weight: 400;
                         font-size: 16px;
                         text-align: center;
                         display: inline-block;
                         cursor: pointer;
                         line-height: 60px;
-                        background-color: #fff;
+                        background-color: $white-bg;
                         min-width: 100%;
                         height: 60px;
-                        border-bottom:1px solid #dfdfdf;
-                        border-right:1px solid #dfdfdf;
+                        border-bottom:1px solid $border-def;
+                        border-right:1px solid $border-def;
                     } 
                 }
     
                 .product-details-tabs-buttons ul li.ui-state-active{
                     .product-details-butn{
-                        color: #263238;
+                        color: $def-color;
                         font-weight: 500;
                         border-bottom:3px solid $green;
                     }
@@ -211,14 +211,14 @@
     
             .product-details-tabs{
                 flex-direction: column;
-                border:1px solid #dfdfdf;
+                border:1px solid $border-def;
                 border-right:none;
                 margin-bottom:53px;
             }
     
             .product-details-tabs-items {
-                background-color: #fff;
-                border-right:1px solid #dfdfdf;
+                background-color: $white-bg;
+                border-right:1px solid $border-def;
                 padding-top: 25px;
                 display: flex;
                 flex-wrap: wrap;
@@ -243,7 +243,7 @@
                         font-family: 'Roboto', sans-serif;
                         font-size: 16px;
                         line-height: 36px;
-                        color: #707070;
+                        color: $md-grey;
                         width:100%;
                         max-width: 290px;
                         white-space: wrap;
@@ -268,15 +268,15 @@
                 font-family: 'Roboto', sans-serif;
                 font-weight:700;
                 font-size: 20px;
-                color:#263238;
+                color:$def-color;
                 padding:0 0 20px;
-                border-bottom:1px solid #dfdfdf;
+                border-bottom:1px solid $border-def;
                 width:100%;
             }
     
             .sales{
-                background-color: #fff;
-                border:1px solid #dfdfdf;
+                background-color: $white-bg;;
+                border:1px solid $border-def;
                 display:flex;
                 align-items: baseline;
                 height:64px;
@@ -284,14 +284,14 @@
     
                 .fas{
                     font-size: 20px;
-                    color:#a6b5bb; 
+                    color:$sales; 
                 }
     
                 .quantity{
                     font-family:'Roboto', sans-serif;
                     font-weight:700;
                     font-size:20px;
-                    color:#263238;
+                    color:$def-color;
                     margin-left:22px;
                 }
     
@@ -299,14 +299,14 @@
                     font-family:'Roboto', sans-serif;
                     font-weight:300;
                     font-size:16px;
-                    color:#707070;
+                    color:$md-grey;
                     margin-left:12px;
                 }
             }
     
             .product-information{
-                background-color: #fff;
-                border:1px solid #dfdfdf;
+                background-color: $white-bg;
+                border:1px solid $border-def;
                 display:flex;
                 flex-direction: column;
                 padding:20px 30px;
@@ -320,21 +320,21 @@
                             font-family: 'Roboto', sans-serif;
                             font-weight:500;
                             font-size:14px;
-                            color:#263238;
+                            color:$def-color;
                         }
                         .finish{
                             font-family: 'Roboto', sans-serif;
                             font-weight:400;
                             font-size:14px;
-                            color:#70838d;
+                            color:$lgt-grey;
                         }
                     }
                 }
             }
     
             .product-author{
-                background-color: #fff;
-                border:1px solid #dfdfdf;
+                background-color: $white-bg;
+                border:1px solid $border-def;
                 display:flex;
                 flex-direction: column;
                 padding:20px 30px;
@@ -354,17 +354,17 @@
                             font-family: 'Roboto', sans-serif;
                             font-weight:400;
                             font-size: 18px;
-                            color:#263238;
+                            color:$def-color;
                             margin-bottom:10px;
                         }
     
                         .product-author-butn{
-                            border:1px solid #dfdfdf;
+                            border:1px solid $border-def;
                             text-transform: capitalize;
                             font-family: 'Roboto', sans-serif;
                             font-weight:400;
                             font-size: 13px;
-                            color:#707070;
+                            color:$md-grey;
                             height:28px;
                             width:92px;
                             padding:0 10px;
@@ -419,8 +419,8 @@
             }
     
             .product-price{
-                background-color: #fff;
-                border:1px solid #dfdfdf;
+                background-color: $white-bg;
+                border:1px solid $border-def;
                 display:flex;
                 flex-direction: column;
                 padding:20px 30px;
@@ -431,7 +431,7 @@
                     padding:25px 0 ;
     
                     .price{
-                        color:#e74c3c;
+                        color:$red;
                         font-family: 'Roboto', sans-serif;
                         font-weight:500;
                         font-size:22px;
@@ -458,11 +458,11 @@
                     }
     
                     .blue{
-                        background-color: #42a5f5;
+                        background-color: $lgt-blue;
                     }
     
                     .dark{
-                        background-color: #546e7a;
+                        background-color: $blue;
                     }
                 }
             }
@@ -475,14 +475,14 @@
             
                 .author-portfolio-title{
                     height:58px;
-                    background-color: #fff;
-                    border:1px solid #dfdfdf;
+                    background-color: $white-bg;
+                    border:1px solid $border-def;
                     padding-left: 27px;
                     font-family: 'Roboto', sans-serif;
                     font-weight:500;
                     font-size: 16px;
                     line-height: 58px;
-                    color:#263238;
+                    color:$def-color;
                     margin-bottom:15px;
                 }
         
@@ -512,7 +512,7 @@
                                 font-family:'Roboto', sans-serif;
                                 font-weight: 500;
                                 font-size:14px;
-                                color:#263238;
+                                color:$def-color;
                                 margin-bottom:5px;
                                 
                             }
@@ -529,13 +529,13 @@
                                 font-family:'Roboto', sans-serif;
                                 font-weight: 700;
                                 font-size:18px;
-                                color:#263238;
+                                color:$def-color;
                             } 
                         } 
                     }
                     a .card{
                         margin:0;
-                        border:1px solid #dfdfdf;
+                        border:1px solid $border-def;
                     }
                 }
             } 

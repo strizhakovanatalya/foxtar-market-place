@@ -12,7 +12,7 @@
             font-family: 'Roboto', sans-serif;
             font-weight: 500;
             font-size: 14px;
-            color:#222;
+            color:$lgt-black;
         }
         
         span:last-child{
@@ -26,8 +26,8 @@
             display:flex;
             align-items: center;
             padding:0;
-            background-color: #fff;
-            border-color: #fff;
+            background-color: $white-bg;
+            border-color: $white;
             margin-right: 20px;
             &.btn{
                 min-width:160px;
@@ -47,7 +47,7 @@
             .fa-chevron-down{
                 margin-left:20px;
                 font-size:14px;
-                color:#707070;
+                color:$md-grey;
                 vertical-align: text-bottom;
             }
         }
@@ -55,12 +55,12 @@
         .dropdown-menu{
             padding:20px 0 30px;
             &.show{
-                border:1px solid #d5d5d5;
+                border:1px solid $border-def;
                 border-radius:0;
                 font-family: 'Roboto', sans-serif;
                 font-weight: 400;
                 font-size: 12px;
-                color:#546e7a;
+                color:$blue;
                 width:160px;
         
                 .dropdown-item{
@@ -97,12 +97,12 @@
         }
         
         .btn-secondary, .dropdown-item{
-            color:#70838d;
+            color:$lgt-grey;
             font-family: 'Roboto', sans-serif;
             font-weight:400;
             font-size:13px; 
-            background-color:$white;
-            border:1px solid #d5d5d5;
+            background-color:$white-bg;
+            border:1px solid $border-def;
             border-radius:0;
             padding: 0 .75rem;
         }
@@ -111,7 +111,7 @@
             min-width:82px;
             &.show{
                 border-radius:0;
-                border:1px solid #dfdfdf;
+                border:1px solid $border-def;
                 width:82px;
                 padding:0;
                 .dropdown-item{
@@ -128,9 +128,9 @@
 
         .btn-secondary:not(:disabled):not(.disabled):active, 
         .show>.btn-secondary.dropdown-toggle {
-            color: #70838d;
-            background-color: #fff;
-            border-color: #d5d5d5;
+            color: $lgt-grey;
+            background-color: $white-bg;
+            border-color: $border-def;
         }
     }
 } 
