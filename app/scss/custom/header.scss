@@ -216,7 +216,7 @@
 
 @media(max-width: 800px){
 
-    .container {
+    .header-light .container {
         @include flex-col;
         padding: 27px 20px;
 
@@ -239,8 +239,8 @@
 
     
 
-@media(max-width: 768px){
-    .container {
+@media(max-width: 768px){ 
+        .container {
         padding-bottom: 5px;
         img {
             vertical-align: bottom;
@@ -267,17 +267,20 @@
     }
 }
 
+
 @media(max-width: 425px){
     .container {
         @include flex-col;
         @include flex-a-i-center;
         padding-bottom: 0px;
         .section_registr {
-            flex-direction: column-reverse;
-            margin-top: 10px;
+            flex-direction: column;
+            padding: 10px;
             .header_simbols {
                 @include flexible-sp-btw;
                 width: 100%;
+                margin-bottom: 15px;
+                margin-top: 5px;
                 .button {
                     width: 200px;
                 }
@@ -287,8 +290,8 @@
             }
             .header_basket {
                 position: absolute;
-                top: 30px;
-                right: 0px;
+                bottom: 69px;
+                right: 3px;
             }
             .header_text {
                 width: 100%;
@@ -308,5 +311,6 @@
         }
     }
 }
+
 
 

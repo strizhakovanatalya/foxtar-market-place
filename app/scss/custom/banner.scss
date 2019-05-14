@@ -77,8 +77,8 @@
                 margin-bottom: 30px;
             }
 
-            .input_inner input {
-                box-shadow: 1px 1px 10px 0px rgba(100,100,100,0.75);
+            .input_inner input:focus {
+                box-shadow: 0 0 27px rgba(124, 178, 64, 0.5);
             }
         }
     } 
