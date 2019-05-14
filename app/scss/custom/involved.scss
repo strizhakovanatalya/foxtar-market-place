@@ -1,0 +1,81 @@
+@import"../_variables";
+@import"../_mixins";
+@import"../_reset";
+
+.involved{
+    width:100%;
+    background-color: $light-grey;
+    padding: 125px 0 110px;
+    margin-bottom: 120px;
+}
+.involved-btn{
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    color: $def-color;
+    font-weight: 500;
+    display: inline-block;
+    cursor: pointer;
+    background-color: $white;
+    padding: 22px 41px;    
+    font-size: 18px;
+    margin: 0 60px;
+    white-space: nowrap;
+}
+.greyWindow{
+    @include flexible ();
+    margin: auto;    
+    max-width: 1107px;
+    min-height: 440px;
+    background-color: $grey;
+    box-shadow: 14px 9px 25px #d3d3d3;
+}
+.greenWindow{
+    display: flex;
+    align-items: center;
+    min-width: 655px;
+    min-height: 215px;
+    margin: auto;
+    background-color: $green;
+    color: $white; 
+}
+.involved-title{
+    @include default-title ();
+    font-size: 30px;
+    color: $white;
+    margin-left: 60px;
+    font-weight: 200;
+}
+@media(max-width:700px){
+    .greenWindow{
+        min-width: 600px;
+        flex-direction: column;            
+        padding-top: 30px;
+    }
+    .involved-title{
+        margin-bottom: 15px;
+        margin: 0;
+        text-align: center;
+    }
+    .involved-btn{
+        margin: 30px;
+    }
+}
+@media(max-width:600px) {
+    .greenWindow{
+        min-width: 500px;        
+    }
+    .involved-title{
+        font-size: 25px;
+    }
+}
+@media(max-width:500px) {
+    .greenWindow{
+        min-width: 400px;        
+    }
+
+}
+@media(max-width:400px) {
+    .greenWindow{
+        min-width: 300px;        
+    }
+}
