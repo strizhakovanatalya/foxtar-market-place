@@ -5,8 +5,7 @@
 
 .middle-section.container-full{
     padding:100px 0 120px;
-    display:flex;
-    flex-direction: column;
+    @include flex-col;
 
     div.breadcrumb{
         width: 100%;
@@ -24,8 +23,7 @@
             padding:12px 16px 12px 0;
         
             li.breadcrumb-item{
-                font-family: 'Roboto', sans-serif;
-                font-size:15px;
+                @include roboto-15-400;
                 color:$breadcrumb;
             }
             
@@ -48,9 +46,8 @@
         flex:1 0 100%;
     
         .product-details{
-            display:flex;
             flex: 0 1 75%;
-            flex-direction: column;
+            @include flex-col;
             max-width: 870px;
             position: relative;
     
@@ -79,18 +76,17 @@
                     }
     
                     .card-text{
-                        font-family: 'Roboto', sans-serif;
-                        font-weight: 400;
+                        @include roboto-15-400;
                         font-size: 16px;
                         line-height: 24px;
                         color:$md-grey;
+                        text-transform: none;
                         margin-bottom:45px;
                         max-width:850px;
                     }
     
                     .buttons{
-                        display:flex;
-                        justify-content: space-between;
+                        @include flexible-sp-btw;
                         margin-bottom:55px;
     
                         .more-buttons{
@@ -183,10 +179,8 @@
                     white-space: nowrap;
     
                     .product-details-butn{
-                        text-transform: capitalize;
-                        font-family: 'Roboto',sans-serif;
+                        @include roboto-15-400;
                         color: $lgt-grey;
-                        font-weight: 400;
                         font-size: 16px;
                         text-align: center;
                         display: inline-block;
@@ -210,7 +204,7 @@
             } 
     
             .product-details-tabs{
-                flex-direction: column;
+                @include flex-col;
                 border:1px solid $border-def;
                 border-right:none;
                 margin-bottom:53px;
@@ -225,8 +219,7 @@
                 height:262px;
     
                 .wrap ul{
-                    display: flex;
-                    flex-direction: column; 
+                    @include flex-col;
                     flex-wrap: wrap;
                     height: 200px;
                     white-space: wrap;
@@ -255,29 +248,20 @@
     
         .sidebar{
             margin-left:30px;
-            display:flex;
-            flex-direction: column;
+            @include flex-col;
             max-width: 270px;
     
             > div{
-                margin-bottom:30px;
+                @include sidebar-div;
             }
 
             .sidebar-title{
-                text-transform: capitalize;
-                font-family: 'Roboto', sans-serif;
-                font-weight:700;
-                font-size: 20px;
-                color:$def-color;
-                padding:0 0 20px;
-                border-bottom:1px solid $border-def;
-                width:100%;
+                @include sidebar-title;
             }
     
             .sales{
-                background-color: $white-bg;;
-                border:1px solid $border-def;
                 display:flex;
+                flex-direction: row;
                 align-items: baseline;
                 height:64px;
                 padding:16px 30px;
@@ -305,11 +289,6 @@
             }
     
             .product-information{
-                background-color: $white-bg;
-                border:1px solid $border-def;
-                display:flex;
-                flex-direction: column;
-                padding:20px 30px;
     
                 .product-information-text{
                     padding:20px 0 0;
@@ -323,8 +302,7 @@
                             color:$def-color;
                         }
                         .finish{
-                            font-family: 'Roboto', sans-serif;
-                            font-weight:400;
+                            @include roboto-15-400;
                             font-size:14px;
                             color:$lgt-grey;
                         }
@@ -333,11 +311,6 @@
             }
     
             .product-author{
-                background-color: $white-bg;
-                border:1px solid $border-def;
-                display:flex;
-                flex-direction: column;
-                padding:20px 30px;
                 
                 .product-author-card{
                     padding:25px 0 0;
@@ -346,13 +319,10 @@
     
                     .product-author-text{
                         margin-left:15px;
-                        display:flex;
-                        flex-direction: column;
+                        @include flex-col;
                         
                         .product-author-subtitle{
-                            text-transform: capitalize;
-                            font-family: 'Roboto', sans-serif;
-                            font-weight:400;
+                            @include roboto-15-400;
                             font-size: 18px;
                             color:$def-color;
                             margin-bottom:10px;
@@ -360,9 +330,7 @@
     
                         .product-author-butn{
                             border:1px solid $border-def;
-                            text-transform: capitalize;
-                            font-family: 'Roboto', sans-serif;
-                            font-weight:400;
+                            @include roboto-15-400;
                             font-size: 13px;
                             color:$md-grey;
                             height:28px;
@@ -374,8 +342,7 @@
                 }
     
                 .product-author-sprite{
-                    display:flex;
-                    justify-content: space-between;
+                    @include flexible-sp-btw;
     
                     .icon{
                         display:inline-block;
@@ -419,15 +386,9 @@
             }
     
             .product-price{
-                background-color: $white-bg;
-                border:1px solid $border-def;
-                display:flex;
-                flex-direction: column;
-                padding:20px 30px;
     
                 .product-price-text{
-                    display:flex;
-                    justify-content: space-between;
+                    @include flexible-sp-btw;
                     padding:25px 0 ;
     
                     .price{
@@ -439,8 +400,7 @@
                 }
 
                 .product-price-buttons{
-                    display: flex;
-                    flex-direction: column;
+                    @include flex-col;
     
                     .fas, .far{
                         margin-right:10px;
@@ -487,10 +447,9 @@
                 }
         
                 .author-portfolio-cards{
-                    display:flex;
-                    flex-wrap: wrap;
+                    @include flexible;
                     margin:0 -15px;
-                    justify-content: center;
+                    
     
                     .card{
                         min-width:270px;
@@ -551,7 +510,7 @@
 
 @media(max-width:1100px){
     .middle-section.container-full .container-md .product-details .product-details-card .card .card-body .buttons{
-        flex-direction: column;
+        @include flex-col;
 
         .more-buttons{
             margin-bottom:30px;
@@ -602,8 +561,8 @@
     
     .middle-section.container-full .container-md .product-details .product-details-card .card .card-body .buttons{
         .more-buttons{
-            flex-direction: column;
-            align-items: center;
+            @include flex-col;
+            @include flex-a-i-center;
 
             .butn-card+.butn-card{
                 margin-left:0;
@@ -628,7 +587,7 @@
 @media(max-width:650px){
 
     #product-details .header-light .container {
-        flex-direction: column;
+        @include flex-col;
         padding: 27px 20px 0 20px;
     
         .section-registr{
@@ -640,7 +599,7 @@
             }
     
             .header-simbols{
-                flex-direction: column;
+                @include flex-col;
                 .basket{
                     padding:0;
                     margin-bottom:10px;
@@ -653,8 +612,8 @@
     } 
 
     .container-md{
-        flex-direction: column;
-        align-items: center;
+        @include flex-col;
+        @include flex-a-i-center;
     }
 
     .middle-section.container-full .container-md .sidebar{

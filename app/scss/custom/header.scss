@@ -10,7 +10,7 @@
         @include flexible ();
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
-        align-items: center;
+        @include flex-a-i-center;
         flex-wrap: nowrap;
         .header_simbols, .header-simbols {
             display:flex;
@@ -104,7 +104,7 @@
     .container {
         min-height:92px;
         max-width:1200px;
-        align-items: center;
+        @include flex-a-i-center;
         line-height: 40px;
         padding:0 15px;
     
@@ -134,9 +134,8 @@
                         background-color: $header-btn;
                         margin:0 10px;
                         position:relative;
-                        display:flex;
                         justify-content: center;
-                        align-items: center;
+                        @include flex-a-i-center;
                     }
     
                     .fa-bell, .fa-envelope, .fa-shopping-cart{
@@ -178,8 +177,7 @@
                 }
     
                 .header-logout{
-                    display: flex;
-                    align-items: center;
+                    @include flex-a-i-center;
                         
                     .btn{
                         font-family: 'Roboto', sans-serif;
@@ -208,7 +206,7 @@
 @media(max-width:991px){
 
     .header-light .container .section-registr{
-        flex-direction: column;
+        @include flex-col;
         margin:15px 0;
         .header-text{
             align-self: flex-end;
@@ -219,11 +217,11 @@
 @media(max-width: 800px){
 
     .container {
-        flex-direction: column;
+        @include flex-col;
         padding: 27px 20px;
 
         .section-registr {
-            flex-direction: column;
+            @include flex-col;
 
             .header-text {
                 line-height: 14px;
@@ -271,16 +269,14 @@
 
 @media(max-width: 425px){
     .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-col;
+        @include flex-a-i-center;
         padding-bottom: 0px;
         .section_registr {
             flex-direction: column-reverse;
             margin-top: 10px;
             .header_simbols {
-                display: flex;
-                justify-content: space-between;
+                @include flexible-sp-btw;
                 width: 100%;
                 .button {
                     width: 200px;
@@ -296,8 +292,7 @@
             }
             .header_text {
                 width: 100%;
-                display: flex;
-                flex-direction: column;
+                @include flex-col;
                 margin-top: 10px;
                 span {
                     margin-bottom: 0px;

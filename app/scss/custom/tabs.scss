@@ -90,8 +90,7 @@
 }
 
 .item-name{
-    display:flex;
-    flex-direction: column;
+    @include flex-col;
 }
 
 .item-title, .item-subtitle{

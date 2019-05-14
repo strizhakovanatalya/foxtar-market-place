@@ -1,3 +1,5 @@
+@import "_variables";
+
 @mixin flexible () {
     display: flex; 
     justify-content: center; 
@@ -16,5 +18,31 @@
 @mixin flex-a-i-center(){
     display:flex;
     align-items: center;
+}
+
+@mixin sidebar-title(){
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-weight:700;
+    font-size: 20px;
+    color:$def-color;
+    padding:0 0 20px;
+    border-bottom:1px solid $border-def;
+    width:100%;
+}
+
+@mixin sidebar-div{
+    margin-bottom:30px;
+    background-color: $white-bg;
+    border:1px solid $border-def;
+    @include flex-col;
+    padding:20px 30px;
+}
+
+@mixin roboto-15-400{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: capitalize;
 }
     
