@@ -10,7 +10,6 @@
 
 .modal-content {
     background-color: $green;
-    background-color: #8bc34a;
     border-radius: 0;
     .modal-header {
         border-bottom: none;
@@ -18,8 +17,7 @@
 }
 
 .modal-body {
-    display: flex;
-    flex-direction: column;
+    @include flex-col;
     padding: 91px 165px 115px;
     text-transform: capitalize;
     font-family: 'Roboto', sans-serif;
@@ -142,17 +140,17 @@
 }
 
 .modal-buttons .btn-submit:hover {
-    box-shadow: 1px 2px 2px #53951f;
+    box-shadow: 1px 2px 2px $modal-bs;
     background-color: $white;
-    color: #000;
+    color: $black;
     font-weight: bold;
 
 }
 
 .modal-buttons .btn-acc:hover {
-    box-shadow: 1px 2px 2px #53951f;
+    box-shadow: 1px 2px 2px Smodal-bs;
     background-color: $white;
-    color: #000;
+    color: $black;
     font-weight: bold;
 }
 
@@ -177,7 +175,7 @@
         padding-left: 50px;
         padding-right: 50px;
         .modal-buttons {
-            flex-direction: column;
+            @include flex-col;
             width: 100%;
             .btn-submit {
                 width: 100%;
@@ -214,7 +212,7 @@
         padding-left: 10px;
         padding-right: 10px;
         .modal-buttons {
-            flex-direction: column;
+            @include flex-col;
             width: 100%;
             .btn-submit {
                 width: 100%;

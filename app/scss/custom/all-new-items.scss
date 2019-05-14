@@ -6,15 +6,14 @@
     .container-fluid{
         background-color: $site-bg;
         .container{
-            flex-direction: column;
+            @include flex-col;
             padding:40px 0;
             .breadcrumb{
                 background-color: transparent;
                 padding:0;
 
                 li.breadcrumb-item{
-                    font-family: 'Roboto', sans-serif;
-                    font-size:15px;
+                    @include roboto-15-400;
                     color:$breadcrumb;
                 }
                 
@@ -29,29 +28,15 @@
             }
 
             .sidebar{
-                
-                display:flex;
-                flex-direction: column;
+                @include flex-col;
                 max-width: 270px;
         
                 > div{
-                    margin-bottom:30px;
-                    background-color: $white-bg;
-                    border:1px solid $border-def;;
-                    display:flex;
-                    flex-direction: column;
-                    padding:20px 30px;
+                    @include sidebar-div;
                 }
 
                 .sidebar-title{
-                    text-transform: capitalize;
-                    font-family: 'Roboto', sans-serif;
-                    font-weight:700;
-                    font-size: 20px;
-                    color:$def-color;
-                    padding:0 0 20px;
-                    border-bottom:1px solid $border-def;
-                    width:100%;
+                    @include sidebar-title;
                 }
 
                 .categories{
@@ -59,12 +44,9 @@
                     ul{
                         padding:25px 0;
                         li a{
-                            display:flex;
-                            justify-content: space-between;
+                            @include flexible-sp-btw;
                             span{
-                                font-family: 'Roboto', sans-serif;
-                                font-weight:400;
-                                font-size:15px;
+                                @include roboto-15-400;
                                 color:$def-color;
                                 line-height: 34px;
                                 &:last-child{
@@ -100,16 +82,14 @@
                             height: 17px;
                             border-radius: 50%;
                             border:4px solid $green;
-                            background-color: $white;
+                            background-color: $white-bg;
                             &>i:first-child{
                                 background-color: $white-bg;
                             }
                         }
                         .irs-from, .irs-to, .irs-single {
                             color: $price-range-num;
-                            font-size: 15px;
-                            font-family: 'Roboto', sans-serif;
-                            font-weight:400;
+                            @include roboto-15-400;
                             text-shadow: none;
                             padding: 1px 5px 1px 15px;
                             background-color: transparent;
@@ -127,11 +107,9 @@
                     } 
                 }
                 .btn-primary {
-                    font-family: 'Roboto', sans-serif;
+                    @include roboto-15-400;
                     font-weight:500;
-                    font-size: 15px;
                     line-height: 35px;
-                    text-transform: capitalize;
                     color: $white-text;
                     border-radius:0px;
                     height: 46px;
@@ -165,14 +143,9 @@
                         &:hover{
                             box-shadow: none;
                         }
-                        
-                        
     
                         .item-title{
-                            @include default-title ();
                             font-size: 16px;
-                            margin-bottom:5px;
-                            text-align: left;
                         }
     
                         .item-text{
@@ -191,15 +164,14 @@
             /* --/sidebar-- */
 
             .sort-by{
-                display:flex;
+                @include flex-a-i-center;
+                @include roboto-15-400;
                 justify-content: space-between;
-                align-items: center;
                 margin-bottom:30px;
                 background-color: $white-bg;
                 border:1px solid $border-def;
                 height:60px;
                 padding:0 25px 0 20px;
-                font-family: 'Roboto', sans-serif;
                 font-size:14px;
                 color:$md-grey;
                 
@@ -226,8 +198,7 @@
                 }
             }
             .nav{
-                display:flex;
-                justify-content: space-between;
+                @include flexible-sp-btw;
                 width:195px;
                 .nav-item{
                     width:44px;
@@ -264,9 +235,8 @@
             }
 
             .wrap{
-                display:flex;
+                @include flexible-sp-btw;
                 flex-wrap: wrap;
-                justify-content: space-between;
                 margin-bottom:30px;
             }
 
@@ -329,7 +299,7 @@
 
     #all-new-items .container-fluid .container .wrap {
         
-        justify-content: space-between;
+        @include flexible-sp-btw;
         
         .item{
             margin:0px;
@@ -341,7 +311,7 @@
 @media(max-width:650px){
 
     #all-new-items .header-light .container {
-        flex-direction: column;
+        @include flex-col;
         padding: 27px 20px 0 20px;
     
         .section-registr{
@@ -353,7 +323,7 @@
             }
     
             .header-simbols{
-                flex-direction: column;
+                @include flex-col;
                 .basket{
                     padding:0;
                     margin-bottom:10px;

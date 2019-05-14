@@ -23,8 +23,7 @@
         }
         
         button{
-            display:flex;
-            align-items: center;
+            @include flex-a-i-center;
             padding:0;
             background-color: $white-bg;
             border-color: $white;
@@ -57,8 +56,7 @@
             &.show{
                 border:1px solid $border-def;
                 border-radius:0;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 400;
+                @include roboto-15-400;
                 font-size: 12px;
                 color:$blue;
                 width:160px;
@@ -98,8 +96,7 @@
         
         .btn-secondary, .dropdown-item{
             color:$lgt-grey;
-            font-family: 'Roboto', sans-serif;
-            font-weight:400;
+            @include roboto-15-400;
             font-size:13px; 
             background-color:$white-bg;
             border:1px solid $border-def;
@@ -139,8 +136,7 @@
         display:inline-block;
 
         .btn-secondary, .dropdown-item{
-            font-family: 'Roboto', sans-serif;
-            font-weight:400;
+            @include roboto-15-400;
             font-size:14px;
             color:$md-grey; 
             background-color:$white-bg;

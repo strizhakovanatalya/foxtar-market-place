@@ -15,7 +15,7 @@
 
     .banner_text {
         @include flex-col ();
-        align-items: center;
+        @include flex-a-i-center;
         padding:0 15px;
         h1 {
             font-size: 48px;
