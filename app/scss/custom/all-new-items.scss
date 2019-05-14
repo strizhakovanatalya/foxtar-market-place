@@ -304,6 +304,12 @@
         .item{
             margin:0px;
             width:200px;
+            .item-text{
+                flex-direction: column;
+            }
+            .item-rating{
+                margin-bottom:20px;
+            }
         }
     }
 }
