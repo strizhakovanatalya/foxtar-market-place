@@ -565,14 +565,6 @@
 
 @media(max-width:991px){
 
-    #product-details .container .section-registr{
-        flex-direction: column;
-        margin:15px 0;
-        .header-text{
-            align-self: flex-end;
-        }
-    }
-
     .middle-section.container-full .container-md .product-details .product-details-card .card .card-body .buttons{
 
         .more-buttons{
@@ -594,37 +586,20 @@
 }
 
 @media(max-width: 800px){
-    #product-details .container {
-        flex-direction: column;
-        padding: 27px 20px 0 20px;
 
+    #product-details .header-light .container{
+        flex-direction: row;
         .section-registr{
-            
+            margin:0 0 15px;
             .header-text{
-                align-self: center;
-                padding:0;
-                margin-bottom:20px;
-            }
-
-            .header-simbols{
-                flex-direction: column;
-                .basket{
-                    padding:0;
-                    margin-bottom:10px;
-                }
-                .dropdown{
-                    margin:0;
-                }
+                flex-direction: row;
             }
         }
     }
 }
 
 @media(max-width:767px){
-    #product-details.section-registr{
-        flex-direction: column;
-    }
-
+    
     .middle-section.container-full .container-md .product-details .product-details-card .card .card-body .buttons{
         .more-buttons{
             flex-direction: column;
@@ -651,6 +626,32 @@
 }
 
 @media(max-width:650px){
+
+    #product-details .header-light .container {
+        flex-direction: column;
+        padding: 27px 20px 0 20px;
+    
+        .section-registr{
+            margin:15px 0;
+             .header-text{
+                align-self: center;
+                padding:0;
+                margin-bottom:20px;
+            }
+    
+            .header-simbols{
+                flex-direction: column;
+                .basket{
+                    padding:0;
+                    margin-bottom:10px;
+                }
+                .dropdown{
+                    margin:0;
+                }
+            }
+        }
+    } 
+
     .container-md{
         flex-direction: column;
         align-items: center;
