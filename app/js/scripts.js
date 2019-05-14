@@ -40,11 +40,3 @@ $( function() {
         label: ''
     });
 });
-
-$(function () {
-    $('#menu').slicknav({
-        appendTo: '#header .header_menu',
-        label: ''
-    });
-});
-        
