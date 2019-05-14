@@ -308,8 +308,18 @@
                             <div class="sort-by">
                                 <div class="first-group">
                                     <i class="fas fa-sort-amount-down"></i>
-                                    <span>Sort By: New Items</span>
-                                    <i class="fas fa-sort"></i>
+                                    <span>Sort By:</span>
+                                    <div class="dropdown dropdown-sort">
+                                        <button class="btn btn-secondary dropdown-toggle shadow-none" type="button" id="DDSortMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,19">
+                                            New Items
+                                            <i class="fas fa-sort"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="DDSortMenuButton">
+                                          <a class="dropdown-item" href="#"><i class="fas fa-chevron-right"></i>Categories</a>
+                                          <a class="dropdown-item" href="#"><i class="fas fa-chevron-right"></i>Price</a>
+                                          <a class="dropdown-item" href="#"><i class="fas fa-chevron-right"></i>Date</a>
+                                        </div>
+                                      </div>
                                 </div>
                                 <div class="last-group">
                                     <i class="fas fa-th-large"></i>

@@ -117,6 +117,7 @@
                 .dropdown-item{
                     padding: .375rem .75rem;
                     border:none;
+
                 }
             }
         }
@@ -131,6 +132,57 @@
             color: $lgt-grey;
             background-color: $white-bg;
             border-color: $border-def;
+        }
+    }
+
+    &.dropdown-sort{
+        display:inline-block;
+
+        .btn-secondary, .dropdown-item{
+            font-family: 'Roboto', sans-serif;
+            font-weight:400;
+            font-size:14px;
+            color:$md-grey; 
+            background-color:$white-bg;
+            border:1px solid $border-def;
+            border-radius:0;
+            padding: 0 .75rem;
+        }
+
+        .btn-secondary{
+            border:none;
+            line-height: 14px;
+        }
+
+        .dropdown-toggle::after{
+            display:none;
+        }
+
+        .btn-secondary:not(:disabled):not(.disabled):active, 
+        .show>.btn-secondary.dropdown-toggle {
+            color: $md-grey;
+            background-color: $white-bg;
+            border-color: $border-def;
+        }
+
+        .dropdown-menu{
+            
+            &.show{
+                border-radius:0;
+                border:1px solid $border-def;
+                
+                padding:20px 0 20px 5px;
+                .dropdown-item{
+                    padding: .375rem .75rem;
+                    border:none;
+
+                    .fa-chevron-right{
+                        color:$green;
+                        font-size:14px;
+                        margin-right:10px;
+                    }
+                }
+            }
         }
     }
 } 
