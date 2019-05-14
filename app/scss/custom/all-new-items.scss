@@ -202,22 +202,24 @@
                 font-family: 'Roboto', sans-serif;
                 font-size:14px;
                 color:$md-grey;
-                .fas{
-                    color:$dark;
-                }
+                
                 .fa-sort-amount-down{
                     margin-right:8px;
+                    color:$dark;
                 }
                 .fa-sort{
                     margin-left:12px;
+                    color:$dark;
                 }
                 .fa-list{
                     margin-left:10px;
+                    color:$dark;
                     &:hover{
                         color:$green;
                     }
                 }
                 .fa-th-large{
+                    color:$dark;
                     &:hover{
                         color:$green;
                     }
