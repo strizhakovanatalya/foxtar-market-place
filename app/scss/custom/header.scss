@@ -52,13 +52,13 @@
         border-radius: 50%;
         width: 34px;
         height: 34px;
-        background-color: #f5f5f5;
+        background-color: $header-btn;
         .fa-shopping-cart {
             position: absolute;
             text-align: center;
             left: 23%;
             top: 23%;
-            color: #a0a0a0;
+            color: $header-icon;
         }
     }
 }
@@ -100,14 +100,13 @@
 }
 
 .header-light{
-    background-color: $white;
+    background-color: $white-bg;
     .container {
         min-height:92px;
         max-width:1200px;
         align-items: center;
         line-height: 40px;
         padding:0 15px;
-        /* margin:0 -15px; */
     
         .section-registr {
             line-height: 50px;
@@ -132,7 +131,7 @@
                         width:34px;
                         height:34px;
                         border-radius: 50%;
-                        background-color: #f5f5f5;
+                        background-color: $header-btn;
                         margin:0 10px;
                         position:relative;
                         display:flex;
@@ -142,7 +141,7 @@
     
                     .fa-bell, .fa-envelope, .fa-shopping-cart{
                         font-size:14px;
-                        color:#a0a0a0;
+                        color:$header-icon;
                     }
                     
                     .round-label::after{
@@ -153,28 +152,28 @@
                         width: 18px;
                         height: 18px;
                         border-radius:50%;
-                        background-color: red;
+                        background-color: $red;
                         font-family:'Open Sans', sans-serif;
                         font-weight:600;
                         font-size: 11px;
                         line-height:18px;
-                        color:#fff;
+                        color:$white-text;
                         text-align: center;
                     }
                     
                     .round-label.yellow::after{
                         content:"8";
-                        background-color: #fcb322;
+                        background-color: $yellow;
                     }	
                     
                     .round-label.orange::after{
                         content:"5";
-                        background-color: #ef6c00;
+                        background-color: $orange;
                     }	
                     
                     .round-label.green::after{
                         content:"8";
-                        background-color: #95c85a;
+                        background-color: $green;
                     }	
                 }
     

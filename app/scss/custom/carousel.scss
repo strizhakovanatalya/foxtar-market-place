@@ -3,7 +3,7 @@
 @import"../_reset";
 
 .bg-white{
-    background-color: $white;
+    background-color: $white-bg;
 }
 
 .carousel{
@@ -23,9 +23,9 @@
     }
 
     .slick-dots li button{
-        background:#e8e8e8;
+        background:$dots-bg;
         background-image: url(../img/ellipse.png);
-        border: 1px solid #ccc;
+        border: 1px solid $dots-border;
         width: 16px;
         height: 16px;
         border-radius: 50%;

@@ -38,7 +38,7 @@
                     width:115px;
                     height:115px;
                     border-radius: 50%;
-                    background-color: #b5b5b5;
+                    background-color: $circle;
                     background-image: url(/img/circle.png);
                     margin:0 auto 35px;
                 }
@@ -55,7 +55,7 @@
                     font-family: 'Roboto', sans-serif;
                     font-size: 15px;
                     line-height: 24px;
-                    color:#b0bec5;
+                    color:$breadcrumb;
                 }
             }
             
@@ -66,7 +66,7 @@
                         color:$green;
                     }
                     .circle{
-                        background-color: #d4d4d4;
+                        background-color: $circle-bg;
                         background-image: url(/img/circle-hover.png);
                     }
                 }
