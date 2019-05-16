@@ -48,7 +48,7 @@
     height: 42px;
     position: relative;
     margin: 0px 21px 0px 27px;
-    .sh_cart {
+    .shop-cart {
         border-radius: 50%;
         width: 34px;
         height: 34px;
@@ -63,7 +63,7 @@
     }
 }
 
-.sh_cart::after {
+.shop-cart::after {
     content: "8";
     font-family: 'Open Sans', sans-serif;
     font-size: 11px;
@@ -208,6 +208,12 @@
     }
 }
 
+@media(max-width: 1024px) {
+    .container {
+    padding: 25px 20px 25px 20px;
+    }
+}
+
 @media(max-width:991px){
 
     .header-light .container-light .section-registr{
@@ -244,27 +250,27 @@
 
 @media(max-width: 768px){ 
         .container {
-        padding-bottom: 5px;
-        img {
-            vertical-align: bottom;
-        }
-        .section_registr {
-            display: flex;
-            justify-content: flex-end;
-            width: 100%;
-            .header_text {
-                font-size: 13px;
+            padding: 25px 20px 25px 20px;
+            img {
+                vertical-align: bottom;
             }
-            .header_basket {
-                margin: 0 20px 0 20px;
-            }
-            .header_simbols {
-                .button {
-                    width: 110px;
+            .section_registr {
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+                .header_text {
+                    font-size: 13px;
                 }
-                .btn_login {
-                    margin-right: 20px;
+                .header_basket {
+                    margin: 0 20px 0 20px;
                 }
+                .header_simbols {
+                    .button {
+                        width: 110px;
+                    }
+                    .btn_login {
+                        margin-right: 20px;
+                    }
             }
         }
     }
@@ -282,10 +288,12 @@
         .section-registr{
             @include flex-col;
             margin:10px 0;
+            
              .header-text{
                 align-self: center;
                 padding:0;
                 margin-bottom:20px;
+                
             }
     
             .header-simbols{
@@ -311,6 +319,7 @@
         .section_registr {
             flex-direction: column;
             padding: 10px;
+            position: relative;
             .header_simbols {
                 @include flexible-sp-btw;
                 width: 100%;
@@ -345,6 +354,11 @@
             
         }
     }
+}
+
+.header_basket .shop-cart.shop-cart-position .fa-shopping-cart {
+    left: 8px;
+    top: 10px;
 }
 
 
