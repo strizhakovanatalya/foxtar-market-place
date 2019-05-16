@@ -205,6 +205,7 @@
             margin: 0px;
             border: 1px solid $dropdown-border;
             
+            
             .dropdown-item {
                 padding: 0px;
                 display: flex;
@@ -315,4 +316,81 @@
         background-color: $white;
     }
 
-    
+    .dropdown-menu.show {
+        top: 2px;
+    }
+
+ /*Dropdown Mail*/
+ .basket .dropdown .dropdown-menu .dropdown-item.mail-notification {
+    justify-content: space-between;
+    padding: 18px 29px 21px 21px;
+    &:last-child {
+        padding: 18px 29px 30px 21px;
+    }
+    .fa-envelope {
+        font-size: 16px;
+        color: $breadcrumb;
+        align-self: flex-start;
+        display: flex;
+        padding-top: 5px;
+    }
+    .fa-reply {
+        font-size: 16px;
+        color: $breadcrumb;
+        align-self: flex-start;
+        display: flex;
+        padding-top: 5px;
+    }
+    &:first-child {
+        .fa-envelope {
+            color: $orange;
+        }
+    }
+ .dropdown-round-img {
+     background-color: $circle-bg;
+     border-radius: 50%;
+     height: 48px;
+     width: 48px;
+     border: 1px solid $circle-border;
+     margin-right: 20px;
+    }
+    .dropdown-mail-text {
+        display: flex;
+        flex-direction: column;
+        width: 132px;
+        padding-top: 4px;
+        span:nth-child(1) {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-size: 12px;
+            color: $def-color;
+            line-height: 12px;
+            padding-bottom: 8px;
+        }
+        span:nth-child(2) {
+            font-family: 'Roboto', sans-serif;
+            font-weight: normal;
+            font-size: 11px;
+            color: $dropdown-text;
+            line-height: 11px;
+            padding-bottom: 8px;
+
+        }
+        span:nth-child(3) {
+            font-family: 'Roboto', sans-serif;
+            font-weight: normal;
+            font-size: 10px;
+            color: $md-grey;
+            line-height: 10px;
+
+        }
+        
+    }
+    &:last-child {
+        .dropdown-mail-text {
+            span:nth-child(3){
+                color: $pale-grey;
+            }
+        }
+    }
+}
