@@ -183,6 +183,9 @@
     }
 } 
 
+
+
+
 /*dropdown cart*/
 .basket {
     .dropdown {
@@ -454,6 +457,10 @@
     div.dropdown-menu.dropdown-menu-right.dropdown-menu-lg-left.show {
         transform: translate3d(-217px, 92px, 0px) !important;
     }
+  
+  .dropdown.dropdown-history .dropdown-menu.show{
+        transform: translate3d(10px, 71px, 0px) !important;
+    }
 
 
 }
@@ -469,6 +476,11 @@
     div.dropdown-menu.dropdown-menu-right.dropdown-menu-lg-left.show.notification {
         transform: translate3d(-113px, 111px, 0px) !important;
     }
+  
+  .dropdown.dropdown-history .dropdown-menu.show{
+        transform: translate3d(10px,44px,0)!important; 
+    }
+
 
 
 }
