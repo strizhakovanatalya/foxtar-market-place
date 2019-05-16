@@ -78,9 +78,7 @@
                     font-family: 'Myriad Pro', sans-serif;
                     &:focus {
                         box-shadow: none;
-                    } 
-                    
-                    
+                    }                     
                 }
                 textarea {
                     resize: none;
@@ -259,72 +257,134 @@
 
 }
 
-
+@media(max-width:1200px){
+    .main-background {
+        .container-main {  
+            .breadcrumb {
+                padding-left: 10px;
+            }
+            .form-main {
+                .form-control {
+                    width: 80%;
+                }
+                .custom-file-label {
+                    width: 80%;
+                }
+            }        
+            .set-price {
+                .button-set-price {
+                    margin-left: 22.5%;                
+                }
+            }   
+        }
+    }
+}
 @media(max-width: 1024px){
     .main-background {
         .container-main {  
             .breadcrumb {
                 padding-left: 20px;
+            }                        
+        }
+    }
+}    
+@media(max-width:890px){
+    .main-background {
+        .container-main {  
+            .breadcrumb {
+                padding-left: 20px;
             }
             .form-main {
                 .form-control {
-                    width: 80%;
+                    width: 75%;
                 }
                 .custom-file-label {
-                    width: 80%;
+                    width: 75%;
                 }
-            }
+            }        
             .set-price {
                 .button-set-price {
-                    margin-left: 22.5%;
-                
+                    margin-left: 27%;                
                 }
-            }
+            }   
         }
     }
 }
-
-
-
-    
-
 @media(max-width: 768px){
     .main-background {
-        .container-main {  
-            .breadcrumb {
-                padding-left: 20px;
-            }
-            .form-main {
-                .form-control {
-                    width: 75%;
-                }
-                .custom-file-label {
-                    width: 75%;
-                }
-            }
+        .container-main {                          
             .set-price {
                 .button-set-price {
-                    margin-left: 27.5%;
-                   
+                    margin-left: 28%;                   
                 }
             }
         }
     }
+}    
+@media(max-width:690px){
+    .main-background {
+        .container-main {              
+            .form-main {
+                .form-control {
+                    width: 70%;
+                }
+                .custom-file-label {
+                    width: 70%;
+                }
+            }        
+            .set-price {
+                .button-set-price {
+                    margin-left: 32%;                
+                }
+            }   
+        }
+    }
 }
-    
-
-
+@media(max-width:580px){
+    .main-background {
+        .container-main {              
+            .form-main {
+                .form-control {
+                    width: 65%;
+                }
+                .custom-file-label {
+                    width: 65%;
+                }
+            }        
+            .set-price {
+                .button-set-price {
+                    margin-left: 37%;                
+                }
+            }   
+        }
+    }
+}
+@media(max-width:510px){
+    .main-background {
+        .container-main {              
+            .form-main {
+                .form-control {
+                    width: 58%;
+                }
+                .custom-file-label {
+                    width: 58%;
+                }
+            }        
+            .set-price {
+                .button-set-price {
+                    margin-left: 42%;                
+                }
+            }   
+        }
+    }
+}
 @media(max-width: 425px){
     .main-background {
-        .container-main {  
-            .breadcrumb {
-                padding-left: 20px;
-            }
+        .container-main {              
             .form-main {
                 div {
                 flex-direction: column;
                 }
-
                 .form-control {
                     width: 100%;
                 }

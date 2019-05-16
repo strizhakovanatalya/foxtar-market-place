@@ -7,6 +7,14 @@
     background-color: $light-grey;
     padding: 125px 0 110px;
     margin-bottom: 120px;
+    .greyWindow{
+        @include flexible ();
+        margin: auto;    
+        max-width: 1107px;
+        min-height: 440px;
+        background-color: $grey;
+        box-shadow: 14px 9px 25px $light-grey;
+    }
 }
 .involved-btn{
     text-transform: capitalize;
@@ -21,14 +29,7 @@
     margin: 0 60px;
     white-space: nowrap;
 }
-.greyWindow{
-    @include flexible ();
-    margin: auto;    
-    max-width: 1107px;
-    min-height: 440px;
-    background-color: $grey;
-    box-shadow: 14px 9px 25px #d3d3d3;
-}
+
 .greenWindow{
     display: flex;
     align-items: center;
