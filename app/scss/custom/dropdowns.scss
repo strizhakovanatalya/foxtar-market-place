@@ -182,3 +182,137 @@
         }
     }
 } 
+
+/*dropdown cart*/
+.basket {
+    .dropdown {
+        font-family: 'Roboto', sans-serif;
+        .btn {
+            .shop-cart {
+                .fa-shopping-cart:hover {
+                    color: $def-color;
+                    &:active {
+                        color: $def-color;
+                    }
+                }
+            }
+
+        }
+        .dropdown-menu {
+            border-radius: 0;
+            width: 269px;
+            padding: 0px;
+            margin: 0px;
+            border: 1px solid $dropdown-border;
+            
+            .dropdown-item {
+                padding: 0px;
+                display: flex;
+                border-bottom: 1px solid $dropdown-border;
+                padding: 19px 17px 23px 17px;
+                .dropdown-img {
+                    width: 73px;
+                    height: 58px;
+                    background-color: $circle-bg;
+                    margin-right: 15px;
+                }
+                .dropdown-info {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    line-height: 58px;
+                    span:nth-child(1){
+                        font-size: 15px;
+                        color: $def-color;
+                        line-height: 15px;
+                        padding-bottom: 7px;
+                        font-weight: 500;
+                    }
+                    span:nth-child(2){
+                        font-size: 12px;
+                        color: $dropdown-text;
+                        line-height: 12px;
+                        padding-bottom: 10px;
+                        font-weight: 500;
+                    }
+                    span:nth-child(3){
+                        font-size: 16px;
+                        color: $black;
+                        line-height: 16px;
+                        font-weight: 500;
+                    }
+                }
+                .dropdown-bottom {
+                    .dropdown-text {
+                        width: 235px;
+                        display: flex;
+                        justify-content: space-between;
+                        padding-left: 12px;
+                        padding-right: 23px;
+                        line-height: 16px;
+                        margin-bottom: 18px;
+                        
+                        span {
+                            font-size: 16px;
+                            font-weight: bold;
+                            color: $def-color;
+
+                        }
+
+                    }
+                    .dropdown-buttons {
+                        font-weight: bold;
+                        line-height: 35px;
+                        display: flex;
+                        justify-content: space-between;
+                        .dropdown-cart {
+                            width: 105px;
+                            height: 35px;
+                            font-size: 14px;
+                            color: $site-bg;
+                            background-color: $dropdown-btn-green;
+                            text-align: center;
+                            padding: 0px 23px 0px 18px;
+                            font-weight: bold;
+
+                        }
+                        .dropdown-checkout {
+                            width: 123px;
+                            height: 35px;
+                            font-size: 14px;
+                            text-align: center;
+                            color: $site-bg;
+                            padding: 0px 14px 0px 12px;
+                            background-color: $dropdown-btn-red;
+                            font-weight: bold;
+
+
+                        }
+                    }
+                }
+                &:last-child {
+                    padding: 19px 16px 12px;
+
+                }
+            }
+        }
+        .btn {
+            border: 0;
+            padding: 0px;
+            
+            }
+            .dropdown-toggle:after {
+                border: 0;
+                content: "";
+                display: none;
+                margin: 0;
+
+            }
+        }
+    }
+
+    .dropdown-item:focus, .dropdown-item:hover {
+        background-color: $white;
+    }
+
+    
