@@ -449,3 +449,26 @@
             .basket .dropdown .dropdown-menu .dropdown-item.mail-notification .dropdown-round-img.grey-bg {
                     background-color: $circle;
                 }
+
+@media (max-width: 768px) {
+    div.dropdown-menu.dropdown-menu-right.dropdown-menu-lg-left.show {
+        transform: translate3d(-217px, 92px, 0px) !important;
+    }
+
+
+}
+
+@media (max-width: 425px) {
+    div.dropdown-menu.dropdown-menu-right.dropdown-menu-lg-left.show {
+        transform: translate3d(-217px, 111px, 0px) !important;
+    }
+    div.dropdown-menu.dropdown-menu-right.dropdown-menu-lg-left.show.email-orange {
+        transform: translate3d(-165px, 111px, 0px) !important;
+    }
+
+    div.dropdown-menu.dropdown-menu-right.dropdown-menu-lg-left.show.notification {
+        transform: translate3d(-113px, 111px, 0px) !important;
+    }
+
+
+}
