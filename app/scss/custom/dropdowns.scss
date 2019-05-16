@@ -323,7 +323,7 @@
  /*Dropdown Mail*/
  .basket .dropdown .dropdown-menu .dropdown-item.mail-notification {
     justify-content: space-between;
-    padding: 18px 29px 21px 21px;
+    padding: 18px 29px 20px 21px;
     &:last-child {
         padding: 18px 29px 30px 21px;
     }
@@ -358,13 +358,13 @@
         display: flex;
         flex-direction: column;
         width: 132px;
-        padding-top: 4px;
+        padding-top: 6px;
         span:nth-child(1) {
             font-family: 'Roboto', sans-serif;
             font-weight: bold;
             font-size: 12px;
             color: $def-color;
-            line-height: 12px;
+            line-height: 10px;
             padding-bottom: 8px;
         }
         span:nth-child(2) {
@@ -372,7 +372,7 @@
             font-weight: normal;
             font-size: 11px;
             color: $dropdown-text;
-            line-height: 11px;
+            line-height: 9px;
             padding-bottom: 8px;
 
         }
