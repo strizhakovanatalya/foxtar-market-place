@@ -6,13 +6,13 @@
     @include flexible-sp-btw ();
     @include container ();
     padding: 25px 0;
-    .section_registr, .section-registr {
+    .section_registr {
         @include flexible ();
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
         @include flex-a-i-center;
         flex-wrap: nowrap;
-        .header_simbols, .header-simbols {
+        .header_simbols {
             display:flex;
         }
         .header_text {
@@ -101,15 +101,19 @@
 
 .header-light{
     background-color: $white-bg;
-    .container {
+    .container-light {
         min-height:92px;
         max-width:1200px;
         @include flex-a-i-center;
         line-height: 40px;
         padding:0 15px;
+        margin:0 auto;
+        justify-content: space-between;
     
         .section-registr {
+            display:flex;
             line-height: 50px;
+            
     
             .header-text span:first-child {
                 color: $red;
@@ -121,7 +125,8 @@
             } 
                 
             .header-simbols{
-                align-items:center;
+                @include flex-a-i-center;
+                flex-wrap: nowrap;
     
                 .basket{
                     display:flex;
@@ -205,9 +210,9 @@
 
 @media(max-width:991px){
 
-    .header-light .container .section-registr{
+    .header-light .container-light .section-registr{
         @include flex-col;
-        margin:15px 0;
+        margin:0 0 10px 0;
         .header-text{
             align-self: flex-end;
         }
@@ -216,21 +221,19 @@
 
 @media(max-width: 800px){
 
-    .header-light .container {
-        @include flex-col;
-        padding: 27px 20px;
+    .header-light .container-light {
+        padding: 15px 15px 0;
+        .header-img{
+            align-self: flex-start;
+        }
 
         .section-registr {
-            @include flex-col;
+            flex-direction: column-reverse;
+            margin:0;
 
             .header-text {
                 line-height: 14px;
-                text-align: center;
-                padding:20px 0;
-                span:first-child {
-                    display: block;
-                    margin-bottom:15px;
-                }
+                padding:10px 0;
             }
         }
     }
@@ -261,6 +264,38 @@
                 }
                 .btn_login {
                     margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:650px){
+
+    .header-light .container-light {
+        @include flex-col;
+        padding: 15px 15px 0;
+        .header-img{
+            align-self: center;
+        }
+    
+        .section-registr{
+            @include flex-col;
+            margin:10px 0;
+             .header-text{
+                align-self: center;
+                padding:0;
+                margin-bottom:20px;
+            }
+    
+            .header-simbols{
+                @include flex-col;
+                .basket{
+                    padding:0;
+                    margin-bottom:10px;
+                }
+                .dropdown{
+                    margin:0;
                 }
             }
         }

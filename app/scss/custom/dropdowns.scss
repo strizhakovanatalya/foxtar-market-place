@@ -182,3 +182,16 @@
         }
     }
 } 
+
+@media(max-width: 768px){
+    
+    .dropdown.dropdown-history .dropdown-menu.show{
+        transform: translate3d(10px, 71px, 0px) !important;
+    }
+}
+@media(max-width: 425px){
+    
+    .dropdown.dropdown-history .dropdown-menu.show{
+        transform: translate3d(10px,44px,0)!important; 
+    }
+}
