@@ -312,6 +312,9 @@
             margin:0px;
             width:270px;
             margin-bottom:20px;
+            .item-text{
+                flex-direction: row;
+            }
         }
     }
 
