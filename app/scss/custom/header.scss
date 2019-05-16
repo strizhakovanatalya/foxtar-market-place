@@ -227,13 +227,24 @@
             align-self: flex-start;
         }
 
-        .section-registr {
             flex-direction: column-reverse;
             margin:0;
 
             .header-text {
                 line-height: 14px;
-                padding:10px 0;
+                text-align: center;
+                padding: 10px 0;
+                margin: 0 auto;
+                span:first-child {
+                    display: block;
+                    margin-bottom:15px;
+                }
+            }
+            .header-simbols {
+                flex-direction: column;
+                .basket {
+                    padding: 7px;
+                }
             }
         }
     }
@@ -311,6 +322,7 @@
         .section_registr {
             flex-direction: column;
             padding: 10px;
+            position: relative;
             .header_simbols {
                 @include flexible-sp-btw;
                 width: 100%;

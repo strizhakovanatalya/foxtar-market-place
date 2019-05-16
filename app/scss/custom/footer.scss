@@ -20,7 +20,7 @@
         margin-left: 60px;
     } 
     .f-block {
-        width: 25%;   
+        width: 270px;   
         .f-title{       
             @include f-text ();
             font-size: 22px;
@@ -127,7 +127,7 @@
                 font-size: 14px;
                 color: rgba(79, 241, 34, 0.932);
                 line-height: 36px;    
-                padding: 22px 14px 22px 15px; 
+                padding: 19px 14px 19px 15px; 
                 border: 1px solid $def-color;
                 &:hover{
                     border: 1px solid #171819;
@@ -160,9 +160,27 @@
 @media(max-width:1200px){
     .f-container{
         flex-flow: row wrap;
+        .f-block{
+            width: 470px;
+            margin-bottom: 40px;;
+        }
     }
     .f-container .f-block+.f-block{
         margin-left: 10px;
+    }    
+}
+@media(max-width:1090px){
+    .f-container{
+        .f-block{
+            width: 370px;
+        }
+    }
+}
+@media(max-width:850px){
+    .f-container{
+        .f-block{
+            width: 270px;
+        }
     }
 }
 @media(max-width:790px){
@@ -174,14 +192,9 @@
     .f-container{
         flex-flow: row wrap;
         flex-direction: column;
-        justify-content: center;
-        align-items: stretch;
+        align-items: center;
         flex-basis: fill;
-        padding-left: 40px; 
-    }   
-    .f-block{
-        width: 100%;
-        margin: 20px;        
+        padding-left: 40px;                      
     }
     .footer-text{
         padding-top: 0;

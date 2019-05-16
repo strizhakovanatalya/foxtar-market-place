@@ -12,8 +12,8 @@
 @mixin button {
     border-radius: 5px;
     cursor: pointer;
-    height: 32px;
-    width: 72px;
+    height: 30px;
+    width: 70px;
     text-align: center;
     padding: 10px;
     line-height: 10px;
@@ -23,4 +23,9 @@
 @mixin flex-col {
     display: flex;
     flex-direction: column; 
+}
+
+@mixin main-font {
+    font-family: 'Roboto', sans-serif;
+    
 }
