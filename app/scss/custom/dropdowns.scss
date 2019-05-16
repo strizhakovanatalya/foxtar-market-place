@@ -196,6 +196,14 @@
                     }
                 }
             }
+            .email {
+                .fa-envelope:hover {
+                    color: $def-color;
+                    &:active {
+                        color: $def-color;
+                    }
+                }
+            }
 
         }
         .dropdown-menu {
@@ -394,3 +402,5 @@
         }
     }
 }
+
+ /*/Dropdown Mail*/
