@@ -228,6 +228,7 @@
             align-self: flex-start;
         } 
 
+
         .header-text {
             line-height: 14px;
             text-align: center;
@@ -243,8 +244,9 @@
     }
 }
 
+
 @media(max-width: 768px){ 
-        .container {
+    .container {
         padding-bottom: 5px;
         img {
             vertical-align: bottom;
@@ -266,10 +268,10 @@
                 .btn_login {
                     margin-right: 20px;
                 }
-            }
-        }
+        }   }
     }
 }
+
 
 @media(max-width:650px){
 
@@ -348,6 +350,3 @@
         }
     }
 }
-
-
-
