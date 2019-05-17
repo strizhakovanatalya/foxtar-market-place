@@ -340,8 +340,10 @@
 
  /*Dropdown Mail*/
  .dropdown .dropdown-menu .dropdown-item.mail-notification {
+     display: flex;
     justify-content: space-between;
     padding: 18px 29px 20px 21px;
+    border-bottom: 1px solid $dropdown-border;
     &:last-child {
         padding: 18px 29px 29px 21px;
     }
@@ -462,7 +464,7 @@
 
 @media (max-width: 768px) {
     div.dropdown-menu.dropdown-menu-right.dropdown-menu-lg-left.show {
-        transform: translate3d(-217px, 84px, 0px) !important;
+        transform: translate3d(-217px, 60px, 0px) !important;
     }
   
   .dropdown.dropdown-history .dropdown-menu.show{
@@ -470,7 +472,7 @@
     }
 
     div.dropdown-menu.dropdown-menu-right.dropdown-menu-lg-left.show.shop-cart-main {
-        transform: translate3d(-229px, 67px, 0px) !important;
+        transform: translate3d(-229px, 47px, 0px) !important;
     }
 }
 
