@@ -223,38 +223,27 @@
 
     .header-light .container-light {
         padding: 15px 15px 0;
-        flex-direction: column-reverse;
         margin:0;
         .header-img{
             align-self: flex-start;
+        } 
+
+
+        .header-text {
+            line-height: 14px;
+            text-align: center;
+            padding: 0;
+            margin-bottom: 15px;
         }
-
-            
-
-            .header-text {
-                line-height: 14px;
-                text-align: center;
-                padding: 10px 0;
-                margin: 0 auto;
-                span:first-child {
-                    display: block;
-                    margin-bottom:15px;
-                }
-            }
-            .header-simbols {
-                flex-direction: column;
-                .basket {
-                    padding: 7px;
-                }
+        .header-simbols {
+            flex-direction: row;
+            .basket {
+                padding: 7px;
             }
         }
     }
+}
 
-
-
-
-
-    
 
 @media(max-width: 768px){ 
     .container {
