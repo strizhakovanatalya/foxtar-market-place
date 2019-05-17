@@ -223,12 +223,13 @@
 
     .header-light .container-light {
         padding: 15px 15px 0;
+        flex-direction: column-reverse;
+        margin:0;
         .header-img{
             align-self: flex-start;
         }
 
-            flex-direction: column-reverse;
-            margin:0;
+            
 
             .header-text {
                 line-height: 14px;
@@ -248,13 +249,15 @@
             }
         }
     }
-} 
+
+
+
 
 
     
 
 @media(max-width: 768px){ 
-        .container {
+    .container {
         padding-bottom: 5px;
         img {
             vertical-align: bottom;
@@ -276,10 +279,10 @@
                 .btn_login {
                     margin-right: 20px;
                 }
-            }
-        }
+        }   }
     }
 }
+
 
 @media(max-width:650px){
 
@@ -358,6 +361,3 @@
         }
     }
 }
-
-
-

@@ -27,7 +27,7 @@
                 }
             }
 
-            .sidebar{
+            .sidebar, .adaptive-hide{
                 @include flex-col;
                 max-width: 270px;
         
@@ -115,6 +115,7 @@
                     height: 46px;
                     border:0px;
                     margin-bottom:10px;
+                    width:100%;
                     
                     &.green{
                         background-color: $green;
@@ -162,6 +163,9 @@
                 }
             }
             /* --/sidebar-- */
+            .adaptive-hide{
+                display:none;
+            }
 
             .sort-by{
                 @include flex-a-i-center;
@@ -319,7 +323,12 @@
     }
 
     #all-new-items .container-fluid .container .sidebar {
+        /* margin: auto; */
+        display:none;
+    }
+    #all-new-items .container-fluid .container .adaptive-hide {
         margin: auto;
+        display:block;
     }
 
     #all-new-items .container-fluid .container .nav-tabs {
@@ -328,7 +337,7 @@
     }
 
     #all-new-items .container-fluid .container .row{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     
 }
